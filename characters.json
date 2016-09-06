@@ -8,68 +8,27 @@
                     {
                         "id":"1",
                         "char":"あ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"sw"
-                            }
-                        ]
+                        "strokes_pattern":17
                     },
                     {
                         "id":"2",
                         "char":"い",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":2
                     },
                     {
                         "id":"3",
                         "char":"う",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":14
                     },
                     {
                         "id":"4",
                         "char":"え",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":14
                     },
                     {
                         "id":"5",
                         "char":"お",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"se"
-                            }
-                        ]
+                        "strokes_pattern":28
                     }
                 ]
             },
@@ -79,68 +38,27 @@
                     {
                         "id":"6",
                         "char":"か",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"se"
-                            }
-                        ]
+                        "strokes_pattern":28
                     },
                     {
                         "id":"7",
                         "char":"き",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"se"
-                            }
-                        ]
+                        "strokes_pattern":15
                     },
                     {
                         "id":"8",
                         "char":"く",
-                        "strokes":[
-                            {
-                                "direction":"sw"
-                            }
-                        ]
+                        "strokes_pattern":12
                     },
                     {
                         "id":"9",
                         "char":"け",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":33
                     },
                     {
                         "id":"10",
                         "char":"こ",
-                        "strokes":[
-                            {
-                                "direction":"l"
-                            },
-                            {
-                                "direction":"sw"
-                            }
-                        ]
+                        "strokes_pattern":32
                     }
                 ]
             },
@@ -150,59 +68,27 @@
                     {
                         "id":"11",
                         "char":"さ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"se"
-                            }
-                        ]
+                        "strokes_pattern":0
                     },
                     {
                         "id":"12",
                         "char":"し",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":23
                     },
                     {
                         "id":"13",
                         "char":"す",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":3
                     },
                     {
                         "id":"14",
                         "char":"せ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":10
                     },
                     {
                         "id":"15",
                         "char":"そ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":30
                     }
                 ]
             },
@@ -212,62 +98,27 @@
                     {
                         "id":"16",
                         "char":"た",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":6
                     },
                     {
                         "id":"17",
                         "char":"ち",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":3
                     },
                     {
                         "id":"18",
                         "char":"つ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":30
                     },
                     {
                         "id":"19",
                         "char":"て",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":30
                     },
                     {
                         "id":"20",
                         "char":"と",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"sw"
-                            }
-                        ]
+                        "strokes_pattern":16
                     }
                 ]
             },
@@ -277,68 +128,27 @@
                     {
                         "id":"21",
                         "char":"な",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"se"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":13
                     },
                     {
                         "id":"22",
                         "char":"に",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":8
                     },
                     {
                         "id":"23",
                         "char":"ぬ",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":2
                     },
                     {
                         "id":"24",
                         "char":"ね",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":31
                     },
                     {
                         "id":"25",
                         "char":"の",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":23
                     }
                 ]
             },
@@ -348,71 +158,27 @@
                     {
                         "id":"26",
                         "char":"は",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":33
                     },
                     {
                         "id":"27",
                         "char":"ひ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":30
                     },
                     {
                         "id":"28",
                         "char":"ふ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"sw"
-                            },
-                            {
-                                "direction":"se"
-                            }
-                        ]
+                        "strokes_pattern":7
                     },
                     {
                         "id":"29",
                         "char":"へ",
-                        "strokes":[
-                            {
-                                "direction":"ne"
-                            }
-                        ]
+                        "strokes_pattern":18
                     },
                     {
                         "id":"30",
                         "char":"ほ",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":19
                     }
                 ]
             },
@@ -422,71 +188,27 @@
                     {
                         "id":"31",
                         "char":"ま",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":35
                     },
                     {
                         "id":"32",
                         "char":"み",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":3
                     },
                     {
                         "id":"33",
                         "char":"む",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"sw"
-                            }
-                        ]
+                        "strokes_pattern":17
                     },
                     {
                         "id":"34",
                         "char":"め",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":2
                     },
                     {
                         "id":"35",
                         "char":"も",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":35
                     }
                 ]
             },
@@ -496,56 +218,27 @@
                     {
                         "id":"36",
                         "char":"ら",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":3
                     },
                     {
                         "id":"37",
                         "char":"り",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":2
                     },
                     {
                         "id":"38",
                         "char":"る",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":30
                     },
                     {
                         "id":"39",
                         "char":"れ",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":31
                     },
                     {
                         "id":"40",
                         "char":"ろ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":30
                     }
                 ]
             },
@@ -555,41 +248,17 @@
                     {
                         "id":"41",
                         "char":"や",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":10
                     },
                     {
                         "id":"42",
                         "char":"ゆ",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":2
                     },
                     {
                         "id":"43",
                         "char":"よ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":3
                     }
                 ]
             },
@@ -599,38 +268,17 @@
                     {
                         "id":"44",
                         "char":"わ",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":31
                     },
                     {
                         "id":"45",
                         "char":"を",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"sw"
-                            },
-                            {
-                                "direction":"sw"
-                            }
-                        ]
+                        "strokes_pattern":24
                     },
                     {
                         "id":"46",
                         "char":"ん",
-                        "strokes":[
-                            {
-                                "direction":"sw"
-                            }
-                        ]
+                        "strokes_pattern":12
                     }
                 ]
             }
@@ -645,71 +293,27 @@
                     {
                         "id":"47",
                         "char":"ア",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":3
                     },
                     {
                         "id":"48",
                         "char":"イ",
-                        "strokes":[
-                            {
-                                "direction":"se"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":11
                     },
                     {
                         "id":"49",
                         "char":"ウ",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":1
                     },
                     {
                         "id":"50",
                         "char":"エ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":20
                     },
                     {
                         "id":"51",
                         "char":"オ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"sw"
-                            }
-                        ]
+                        "strokes_pattern":17
                     }
                 ]
             },
@@ -719,68 +323,27 @@
                     {
                         "id":"52",
                         "char":"カ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":3
                     },
                     {
                         "id":"53",
                         "char":"キ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":35
                     },
                     {
                         "id":"54",
                         "char":"ク",
-                        "strokes":[
-                            {
-                                "direction":"sw"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":36
                     },
                     {
                         "id":"55",
                         "char":"ケ",
-                        "strokes":[
-                            {
-                                "direction":"sw"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":4
                     },
                     {
                         "id":"56",
                         "char":"コ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":14
                     }
                 ]
             },
@@ -790,68 +353,27 @@
                     {
                         "id":"57",
                         "char":"サ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":10
                     },
                     {
                         "id":"58",
                         "char":"シ",
-                        "strokes":[
-                            {
-                                "direction":"sw"
-                            },
-                            {
-                                "direction":"sw"
-                            },
-                            {
-                                "direction":"nw"
-                            }
-                        ]
+                        "strokes_pattern":29
                     },
                     {
                         "id":"59",
                         "char":"ス",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"se"
-                            }
-                        ]
+                        "strokes_pattern":0
                     },
                     {
                         "id":"60",
                         "char":"セ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":3
                     },
                     {
                         "id":"61",
                         "char":"ソ",
-                        "strokes":[
-                            {
-                                "direction":"se"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":11
                     }
                 ]
             },
@@ -861,74 +383,27 @@
                     {
                         "id":"62",
                         "char":"タ",
-                        "strokes":[
-                            {
-                                "direction":"sw"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"se"
-                            }
-                        ]
+                        "strokes_pattern":27
                     },
                     {
                         "id":"63",
                         "char":"チ",
-                        "strokes":[
-                            {
-                                "direction":"w"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":21
                     },
                     {
                         "id":"64",
                         "char":"ツ",
-                        "strokes":[
-                            {
-                                "direction":"sw"
-                            },
-                            {
-                                "direction":"sw"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":25
                     },
                     {
                         "id":"65",
                         "char":"テ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":35
                     },
                     {
                         "id":"66",
                         "char":"ト",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"sw"
-                            }
-                        ]
+                        "strokes_pattern":16
                     }
                 ]
             },
@@ -938,65 +413,27 @@
                     {
                         "id":"67",
                         "char":"ナ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":3
                     },
                     {
                         "id":"68",
                         "char":"ニ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":14
                     },
                     {
                         "id":"69",
                         "char":"ヌ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"se"
-                            }
-                        ]
+                        "strokes_pattern":0
                     },
                     {
                         "id":"70",
                         "char":"ネ",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"se"
-                            }
-                        ]
+                        "strokes_pattern":22
                     },
                     {
                         "id":"71",
                         "char":"ノ",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":23
                     }
                 ]
             },
@@ -1006,62 +443,27 @@
                     {
                         "id":"72",
                         "char":"ハ",
-                        "strokes":[
-                            {
-                                "direction":"sw"
-                            },
-                            {
-                                "direction":"se"
-                            }
-                        ]
+                        "strokes_pattern":34
                     },
                     {
                         "id":"73",
                         "char":"ヒ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":3
                     },
                     {
                         "id":"74",
                         "char":"フ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":30
                     },
                     {
                         "id":"75",
                         "char":"ヘ",
-                        "strokes":[
-                            {
-                                "direction":"ne"
-                            }
-                        ]
+                        "strokes_pattern":18
                     },
                     {
                         "id":"76",
                         "char":"ホ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"sw"
-                            },
-                            {
-                                "direction":"se"
-                            }
-                        ]
+                        "strokes_pattern":7
                     }
                 ]
             },
@@ -1071,68 +473,27 @@
                     {
                         "id":"77",
                         "char":"マ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"se"
-                            }
-                        ]
+                        "strokes_pattern":0
                     },
                     {
                         "id":"78",
                         "char":"ミ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":26
                     },
                     {
                         "id":"79",
                         "char":"ム",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"se"
-                            }
-                        ]
+                        "strokes_pattern":9
                     },
                     {
                         "id":"80",
                         "char":"メ",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"se"
-                            }
-                        ]
+                        "strokes_pattern":9
                     },
                     {
                         "id":"81",
                         "char":"モ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":35
                     }
                 ]
             },
@@ -1142,62 +503,27 @@
                     {
                         "id":"82",
                         "char":"ラ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":14
                     },
                     {
                         "id":"83",
                         "char":"リ",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":2
                     },
                     {
                         "id":"84",
                         "char":"ル",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":2
                     },
                     {
                         "id":"85",
                         "char":"レ",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":23
                     },
                     {
                         "id":"86",
                         "char":"ロ",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":8
                     }
                 ]
             },
@@ -1207,41 +533,17 @@
                     {
                         "id":"87",
                         "char":"ヤ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":3
                     },
                     {
                         "id":"88",
                         "char":"ユ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":14
                     },
                     {
                         "id":"89",
                         "char":"ヨ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":26
                     }
                 ]
             },
@@ -1251,41 +553,17 @@
                     {
                         "id":"90",
                         "char":"ワ",
-                        "strokes":[
-                            {
-                                "direction":"s"
-                            },
-                            {
-                                "direction":"e"
-                            }
-                        ]
+                        "strokes_pattern":31
                     },
                     {
                         "id":"91",
                         "char":"ヲ",
-                        "strokes":[
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"e"
-                            },
-                            {
-                                "direction":"s"
-                            }
-                        ]
+                        "strokes_pattern":35
                     },
                     {
                         "id":"92",
                         "char":"ン",
-                        "strokes":[
-                            {
-                                "direction":"se"
-                            },
-                            {
-                                "direction":"ne"
-                            }
-                        ]
+                        "strokes_pattern":5
                     }
                 ]
             }
