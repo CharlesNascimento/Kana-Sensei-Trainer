@@ -1,11 +1,20 @@
 package com.kansus.kstrainer;
 
 import java.awt.image.BufferedImage;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import javax.imageio.ImageIO;
+
+import com.kansus.kstrainer.model.TrainingConfig;
+import com.kansus.kstrainer.util.FileUtils;
+import com.kansus.kstrainer.util.Log;
+import com.kansus.kstrainer.util.Utils;
+import com.kansus.kstrainer.util.ValidationUtils;
 
 /**
  * Main class of the application.
@@ -14,85 +23,108 @@ import javax.imageio.ImageIO;
  */
 public class Main {
 
-	private static ArrayList<String> validFormats = new ArrayList<>();
-	private static ArrayList<String> validCharFamilies = new ArrayList<>();
-
-	static {
-		validFormats.add("bmp");
-		validFormats.add("jpg");
-		validFormats.add("png");
-		validFormats.add("gif");
-
-		validCharFamilies.add("x");
-		validCharFamilies.add("k");
-		validCharFamilies.add("t");
-		validCharFamilies.add("s");
-		validCharFamilies.add("n");
-		validCharFamilies.add("h");
-		validCharFamilies.add("m");
-		validCharFamilies.add("y");
-		validCharFamilies.add("r");
-		validCharFamilies.add("wn");
-	}
-
 	/**
 	 * Entry point of the application. The following commands and arguments are
-	 * supported: <br>
+	 * supported:<br>
 	 * <br>
-	 * <b>train >traning-config-file<</b> <br>
-	 * <b>evaluate >character-file< >weights-file<</b> <br>
+	 * <b>train &ltneural-network&gt &ltconfig-file&gt</b><br>
+	 * <b>evaluate pixels &ltweights-file&gt &ltcharacter-file&gt</b><br>
+	 * <b>evaluate strokes &ltweights-file&gt&ltstrokes&gt</b><br>
+	 * <b>evaluate-network pixels &lnetwork-config-file&gt</b><br>
 	 * <br>
-	 * Examples: <br>
+	 * Examples:<br>
 	 * <br>
-	 * <b>train training.config</b> <br>
-	 * <b>evaluate extracted\char_1.png pixels.mlp</b>
+	 * <b>train pixels config.json</b><br>
+	 * <b>train strokes config.json</b><br>
+	 * <b>evaluate pixels pixels.mlp test.jpg</b><br>
+	 * <b>evaluate strokes strokes.mlp e,s,s</b>
+	 * <b>evaluate-network pixels config.json</b><br>
 	 * 
-	 * @param args
+	 * @param args Application arguments.
 	 */
 	public static void main(String[] args) {
 		switch (args[0]) {
 		case "train":
-			File trainingConfigFile = new File(args[1]);
-			if (validateTrainArgs(args.length, trainingConfigFile)) {
-				TrainingConfig training = Utils.loadTrainingConfiguration(trainingConfigFile);
-				Trainer trainer = new Trainer();
-				trainer.train(training);
-			}
-			break;
-		case "evaluate":
-			File characterFile = new File(args[1]);
-			File weightsFile = new File(args[2]);
-
-			if (validateEvaluateArgs(args.length, characterFile, weightsFile)) {
+			if (validateTrainArgs(args)) {
 				try {
-					Trainer trainer = new Trainer();
-					BufferedImage characterImage = ImageIO.read(characterFile);
-					trainer.evaluateCharacter(weightsFile, characterImage);
+					File configFile = new File(args[2]);
+					TrainingConfig trainingConfig = FileUtils.loadTrainingConfiguration(configFile);
+					NeuralNetworkFacade trainer = new NeuralNetworkFacade();
+					
+					FileWriter fw = new FileWriter(new File(configFile.getParent(), "log.txt"));
+					Log.setWriter(new BufferedWriter(fw));
+
+					if (args[1].equals("pixels")) {
+						trainer.trainPixelsNetwork(trainingConfig);
+					} else if (args[1].equals("strokes")) {
+						trainer.trainStrokesNetwork(trainingConfig);
+					}
+					
+					Log.closeWriter();
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
 			}
 			break;
+		case "evaluate":
+			if (validateEvaluateArgs(args)) {
+				if (args[1].equals("pixels")) {
+					File pixelsWightsFile = new File(args[2]);
+					File characterFile = new File(args[3]);
+
+					try {
+						NeuralNetworkFacade trainer = new NeuralNetworkFacade();
+						BufferedImage characterImage = ImageIO.read(characterFile);
+						trainer.evaluate(pixelsWightsFile, characterImage, true, false);
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				} else {
+					File strokesWeightsFile = new File(args[2]);
+					List<String> strokes = Arrays.asList(args[3].split(","));
+					NeuralNetworkFacade trainer = new NeuralNetworkFacade();
+					trainer.evaluate(strokesWeightsFile, strokes);
+				}
+			}
+			break;
+		case "evaluate-network":
+			if (validateEvaluateNetworkArgs(args)) {
+				if (args[1].equals("pixels")) {
+					File configFile = new File(args[2]);
+					TrainingConfig trainingConfig = FileUtils.loadTrainingConfiguration(configFile);
+
+					NeuralNetworkFacade neuralNetworkFacade = new NeuralNetworkFacade();
+					neuralNetworkFacade.evaluatePixelsNetwork(trainingConfig);
+				} else if (args[1].equals("strokes")) {
+					File configFile = new File(args[2]);
+					TrainingConfig trainingConfig = FileUtils.loadTrainingConfiguration(configFile);
+
+					NeuralNetworkFacade neuralNetworkFacade = new NeuralNetworkFacade();
+					neuralNetworkFacade.evaluateStrokesNetwork(trainingConfig);
+				}
+			}
+
+			break;
 		default:
 			System.err.println("<ERROR>   Invalid command.");
 			break;
 		}
-
 	}
 
 	/**
 	 * @param args
 	 * @return
 	 */
-	public static boolean validateTrainArgs(int argsCount, File trainingConfigFile) {
-		if (argsCount != 2) {
+	public static boolean validateTrainArgs(String[] args) {
+		if (args.length != 3) {
 			System.err.println("<ERROR>   Incorrect number of parameters.");
-			System.err.println("<INFO>    Command syntax: train <training-config-file>");
+			System.err.println("<INFO>    Command syntax: train <neural-network> <config-file>");
 			return false;
 		}
 
-		if (!trainingConfigFile.exists()) {
-			System.err.println("<ERROR>   Training configuration file not found.");
+		if (args.length == 3 && !Utils.equalsAny(args[1], ValidationUtils.validNeuralNetworks)) {
+			System.err.println("<ERROR>   Invalid neural network: " + args[1]);
+			return false;
 		}
 
 		return true;
@@ -102,32 +134,91 @@ public class Main {
 	 * @param args
 	 * @return
 	 */
-	public static boolean validateEvaluateArgs(int argsCount, File characterFile, File weightsFile) {
-		if (argsCount != 3) {
+	public static boolean validateEvaluateArgs(String[] args) {
+		if (args.length != 4) {
 			System.err.println("<ERROR>   Incorrect number of parameters.");
-			System.err.println("<INFO>    Command syntax: train <training-config-file>");
+			System.err.println("<INFO>    Command syntax: evaluate <training-config-file>");
 			return false;
 		}
 
+		if (!Utils.equalsAny(args[1], ValidationUtils.validNeuralNetworks)) {
+			System.err.println("<ERROR>   Invalid neural network: " + args[1]);
+			return false;
+		}
+
+		return true;
+	}
+	
+	/**
+	 * @param args
+	 * @return
+	 */
+	public static boolean validateEvaluateNetworkArgs(String[] args) {
+		if (args.length != 3) {
+			System.err.println("<ERROR>   Incorrect number of parameters.");
+			System.err.println("<INFO>    Command syntax: evaluate-network pixels <network-config-file>");
+			return false;
+		}
+
+		if (!Utils.equalsAny(args[1], ValidationUtils.validNeuralNetworks)) {
+			System.err.println("<ERROR>   Invalid neural network: " + args[1]);
+			return false;
+		}
+
+		return true;
+	}
+
+	/**
+	 * @param args
+	 * @return
+	 */
+	public static boolean validateEvaluatePixelsArgs(File pixelsWeightsFile, File characterFile) {
 		if (!characterFile.exists()) {
 			System.out.println("<ERROR>   Input image file not found.");
 			return false;
 		}
 
-		if (!endsWithAny(characterFile.getName(), validFormats)) {
+		if (!Utils.endsWithAny(characterFile.getName(), ValidationUtils.validFormats)) {
 			System.err.println("<ERROR>   " + characterFile.getName()
 			        + " is not a supported image file. It should be an image in any of these formats:"
 			        + " BMP, JPG, PNG or GIF.");
 			return false;
 		}
 
-		if (!weightsFile.exists()) {
-			System.out.println("<WARNING> Weights file not found, a new file will be created.");
+		if (!pixelsWeightsFile.exists()) {
+			System.out.println("<WARNING> Weights file not found.");
+			return false;
 		}
 
-		if (!weightsFile.getName().endsWith("mlp")) {
+		if (!pixelsWeightsFile.getName().endsWith("mlp")) {
 			System.err.println("<ERROR>   The weights file should be a valid .mlp file.");
 			return false;
+		}
+
+		return true;
+	}
+
+	/**
+	 * @param strokesWeightsFile
+	 * @param strokes
+	 * @return
+	 */
+	public static boolean validateEvaluateStrokesArgs(File strokesWeightsFile, List<String> strokes) {
+		if (!strokesWeightsFile.exists()) {
+			System.out.println("<WARNING> Weights file not found.");
+			return false;
+		}
+
+		if (!strokesWeightsFile.getName().endsWith("mlp")) {
+			System.err.println("<ERROR>   The weights file should be a valid .mlp file.");
+			return false;
+		}
+
+		for (String stroke : strokes) {
+			if (!Utils.equalsAny(stroke, ValidationUtils.validDirections)) {
+				System.err.println("<ERROR>   Invalid stroke direction: " + stroke);
+				return false;
+			}
 		}
 
 		return true;
@@ -140,65 +231,22 @@ public class Main {
 	public static boolean validateTrainingsConfigs(TrainingConfig trainingConfig) {
 		boolean showedWarning = false;
 
-		if (!trainingConfig.getPixelsWeightsFile().exists() && !showedWarning) {
+		if (!trainingConfig.getWeightsFile().exists() && !showedWarning) {
 			System.out.println("<WARNING> Weights file not found, a new file will be created.");
 		}
 
-		if (!trainingConfig.getPixelsWeightsFile().getName().endsWith("mlp")) {
+		if (!trainingConfig.getWeightsFile().getName().endsWith("mlp")) {
 			System.err.println("<ERROR>   The weights file should be a valid .mlp file.");
 			return false;
 		}
 
-		for (TrainingInput trainingInput : trainingConfig.getInputs()) {
-			if (!trainingInput.getInputImage().exists()) {
-				System.out.println("<ERROR>   Input image file not found.");
-				return false;
-			}
-
-			if (!endsWithAny(trainingInput.getInputImage().getName(), validFormats)) {
-				System.err.println("<ERROR>   " + trainingInput.getInputImage().getName()
-				        + " is not a supported image file. It should be an image in any of these formats:"
-				        + " BMP, JPG, PNG or GIF.");
-				return false;
-			}
-
-			if (!equalsAny(trainingInput.getCharFamily(), validCharFamilies)) {
-				System.err.println("<ERROR>   " + trainingInput.getCharFamily() + " is not a valid char family."
-				        + " Valid character families are " + "x, k, t, s, n, h, m, y, r and wn.");
+		for (File trainingInput : trainingConfig.getInputs()) {
+			if (!trainingInput.exists()) {
+				System.out.println("<ERROR>   Input file not found.");
 				return false;
 			}
 		}
 
 		return true;
-	}
-
-	/**
-	 * @param text
-	 * @param validValues
-	 * @return
-	 */
-	public static boolean endsWithAny(String text, ArrayList<String> validValues) {
-		for (String s : validValues) {
-			if (text.endsWith(s)) {
-				return true;
-			}
-		}
-
-		return false;
-	}
-
-	/**
-	 * @param text
-	 * @param validValues
-	 * @return
-	 */
-	public static boolean equalsAny(String text, ArrayList<String> validValues) {
-		for (String value : validValues) {
-			if (text.equalsIgnoreCase(value)) {
-				return true;
-			}
-		}
-
-		return false;
 	}
 }

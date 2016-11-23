@@ -10,7 +10,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-// TODO Salvar pesos em arquivo binário (menor tamanho)
+// TODO Salvar no arquivo de pesos também a estrutura da rede neural.
 
 /**
  * This class represents a multilayer perceptron neural network.
@@ -31,7 +31,7 @@ public class MultilayerPerceptron {
 
 	private ArrayList<Layer> mLayers = new ArrayList<>();
 
-	private NetworkTrainingProgressListener mProgressListener;
+	private NetworkTrainingListener mProgressListener;
 
 	public MultilayerPerceptron(int inputNeurons, int hiddenNeurons, int outputNeurons) {
 		InputLayer inputLayer = new InputLayer("input_layer", inputNeurons, 1);
@@ -58,7 +58,7 @@ public class MultilayerPerceptron {
 	 * @param progressListener A listener that will be invoked whenever there is
 	 *            a change in the training progress.
 	 */
-	public void train(NetworkTrainingProgressListener progressListener) {
+	public void train(NetworkTrainingListener progressListener) {
 		this.mProgressListener = progressListener;
 		this.backpropagation();
 	}

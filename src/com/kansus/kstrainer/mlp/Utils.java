@@ -25,4 +25,15 @@ public class Utils {
 		
 		return doubles;
 	}
+	
+	public static byte[] intToByteArray(int integer) {
+		ByteBuffer newBuf = ByteBuffer.allocate(4);
+		newBuf.putInt(integer);
+		return newBuf.array();
+	}
+	
+	public static int byteArrayToInt(byte[] array) {
+		ByteBuffer bf = ByteBuffer.wrap(array, 1, 4);
+		return bf.getInt(); 
+	}
 }
