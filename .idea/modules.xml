@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kana Sensei Trainer.iml" filepath="$PROJECT_DIR$/.idea/modules/Kana Sensei Trainer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kana_Sensei_Trainer.iml" filepath="$PROJECT_DIR$/.idea/modules/Kana_Sensei_Trainer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kana_Sensei_Trainer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Kana_Sensei_Trainer_main.iml" group="Kana_Sensei_Trainer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kana_Sensei_Trainer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Kana_Sensei_Trainer_test.iml" group="Kana_Sensei_Trainer" />
+    </modules>
+  </component>
+</project>

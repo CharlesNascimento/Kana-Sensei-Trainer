@@ -1,0 +1,19 @@
+{
+    "weights_file":"strokes.mlp",
+
+    "input_neurons_count":32,
+    "hidden_neurons_count":64,
+    "output_neurons_count":37,
+
+    "learning_rate":0.2,
+    "minimum_error":0.01,
+    "max_epochs":50000,
+
+    "negative_normalization": true,
+
+    "inputs":[
+        {
+            "path":"Patterns\\strokes.json"
+        }
+    ]
+}

@@ -1,0 +1,201 @@
+<INFO>    Starting pixels network training.
+<INFO>    Pattern 1.png added to the neural network
+<INFO>    Pattern 10.png added to the neural network
+<INFO>    Pattern 11.png added to the neural network
+<INFO>    Pattern 12.png added to the neural network
+<INFO>    Pattern 13.png added to the neural network
+<INFO>    Pattern 14.png added to the neural network
+<INFO>    Pattern 15.png added to the neural network
+<INFO>    Pattern 16.png added to the neural network
+<INFO>    Pattern 17.png added to the neural network
+<INFO>    Pattern 18.png added to the neural network
+<INFO>    Pattern 19.png added to the neural network
+<INFO>    Pattern 2.png added to the neural network
+<INFO>    Pattern 20.png added to the neural network
+<INFO>    Pattern 21.png added to the neural network
+<INFO>    Pattern 22.png added to the neural network
+<INFO>    Pattern 23.png added to the neural network
+<INFO>    Pattern 24.png added to the neural network
+<INFO>    Pattern 25.png added to the neural network
+<INFO>    Pattern 26.png added to the neural network
+<INFO>    Pattern 27.png added to the neural network
+<INFO>    Pattern 28.png added to the neural network
+<INFO>    Pattern 29.png added to the neural network
+<INFO>    Pattern 3.png added to the neural network
+<INFO>    Pattern 30.png added to the neural network
+<INFO>    Pattern 31.png added to the neural network
+<INFO>    Pattern 32.png added to the neural network
+<INFO>    Pattern 33.png added to the neural network
+<INFO>    Pattern 34.png added to the neural network
+<INFO>    Pattern 35.png added to the neural network
+<INFO>    Pattern 36.png added to the neural network
+<INFO>    Pattern 37.png added to the neural network
+<INFO>    Pattern 38.png added to the neural network
+<INFO>    Pattern 39.png added to the neural network
+<INFO>    Pattern 4.png added to the neural network
+<INFO>    Pattern 40.png added to the neural network
+<INFO>    Pattern 41.png added to the neural network
+<INFO>    Pattern 42.png added to the neural network
+<INFO>    Pattern 43.png added to the neural network
+<INFO>    Pattern 44.png added to the neural network
+<INFO>    Pattern 45.png added to the neural network
+<INFO>    Pattern 46.png added to the neural network
+<INFO>    Pattern 47.png added to the neural network
+<INFO>    Pattern 48.png added to the neural network
+<INFO>    Pattern 49.png added to the neural network
+<INFO>    Pattern 5.png added to the neural network
+<INFO>    Pattern 50.png added to the neural network
+<INFO>    Pattern 51.png added to the neural network
+<INFO>    Pattern 52.png added to the neural network
+<INFO>    Pattern 53.png added to the neural network
+<INFO>    Pattern 54.png added to the neural network
+<INFO>    Pattern 55.png added to the neural network
+<INFO>    Pattern 56.png added to the neural network
+<INFO>    Pattern 57.png added to the neural network
+<INFO>    Pattern 58.png added to the neural network
+<INFO>    Pattern 59.png added to the neural network
+<INFO>    Pattern 6.png added to the neural network
+<INFO>    Pattern 60.png added to the neural network
+<INFO>    Pattern 61.png added to the neural network
+<INFO>    Pattern 62.png added to the neural network
+<INFO>    Pattern 63.png added to the neural network
+<INFO>    Pattern 64.png added to the neural network
+<INFO>    Pattern 65.png added to the neural network
+<INFO>    Pattern 66.png added to the neural network
+<INFO>    Pattern 67.png added to the neural network
+<INFO>    Pattern 68.png added to the neural network
+<INFO>    Pattern 69.png added to the neural network
+<INFO>    Pattern 7.png added to the neural network
+<INFO>    Pattern 70.png added to the neural network
+<INFO>    Pattern 71.png added to the neural network
+<INFO>    Pattern 72.png added to the neural network
+<INFO>    Pattern 73.png added to the neural network
+<INFO>    Pattern 74.png added to the neural network
+<INFO>    Pattern 75.png added to the neural network
+<INFO>    Pattern 76.png added to the neural network
+<INFO>    Pattern 77.png added to the neural network
+<INFO>    Pattern 78.png added to the neural network
+<INFO>    Pattern 79.png added to the neural network
+<INFO>    Pattern 8.png added to the neural network
+<INFO>    Pattern 80.png added to the neural network
+<INFO>    Pattern 81.png added to the neural network
+<INFO>    Pattern 82.png added to the neural network
+<INFO>    Pattern 83.png added to the neural network
+<INFO>    Pattern 84.png added to the neural network
+<INFO>    Pattern 85.png added to the neural network
+<INFO>    Pattern 86.png added to the neural network
+<INFO>    Pattern 87.png added to the neural network
+<INFO>    Pattern 88.png added to the neural network
+<INFO>    Pattern 89.png added to the neural network
+<INFO>    Pattern 9.png added to the neural network
+<INFO>    Pattern 90.png added to the neural network
+<INFO>    Pattern 91.png added to the neural network
+<INFO>    Pattern 92.png added to the neural network
+<INFO>    Pixels network training started...
+<INFO>    Pixels network training - Current epoch: 10 | Current error: 1.983247683205652
+<INFO>    Pixels network training - Current epoch: 20 | Current error: 1.9818973036217908
+<INFO>    Pixels network training - Current epoch: 30 | Current error: 1.9806492905215187
+<INFO>    Pixels network training - Current epoch: 40 | Current error: 1.979528536766264
+<INFO>    Pixels network training - Current epoch: 50 | Current error: 1.9782512071882303
+<INFO>    Pixels network training - Current epoch: 60 | Current error: 1.9758850249682716
+<INFO>    Pixels network training - Current epoch: 70 | Current error: 1.9704452341808774
+<INFO>    Pixels network training - Current epoch: 80 | Current error: 1.9649531340912294
+<INFO>    Pixels network training - Current epoch: 90 | Current error: 1.961122118920139
+<INFO>    Pixels network training - Current epoch: 100 | Current error: 1.9576744261412118
+<INFO>    Pixels network training - Current epoch: 110 | Current error: 1.9523327959678465
+<INFO>    Pixels network training - Current epoch: 120 | Current error: 1.9445159581169655
+<INFO>    Pixels network training - Current epoch: 130 | Current error: 1.936418601610675
+<INFO>    Pixels network training - Current epoch: 140 | Current error: 1.9245097782025737
+<INFO>    Pixels network training - Current epoch: 150 | Current error: 1.9127618846826828
+<INFO>    Pixels network training - Current epoch: 160 | Current error: 1.9043868551970566
+<INFO>    Pixels network training - Current epoch: 170 | Current error: 1.9000087029002128
+<INFO>    Pixels network training - Current epoch: 180 | Current error: 1.8972856998178635
+<INFO>    Pixels network training - Current epoch: 190 | Current error: 1.8950312231142121
+<INFO>    Pixels network training - Current epoch: 200 | Current error: 1.892443388664531
+<INFO>    Pixels network training - Current epoch: 210 | Current error: 1.8872222343665488
+<INFO>    Pixels network training - Current epoch: 220 | Current error: 1.8761372192422656
+<INFO>    Pixels network training - Current epoch: 230 | Current error: 1.8661806830951264
+<INFO>    Pixels network training - Current epoch: 240 | Current error: 1.8550990064830852
+<INFO>    Pixels network training - Current epoch: 250 | Current error: 1.8438244111227826
+<INFO>    Pixels network training - Current epoch: 260 | Current error: 1.8225219147438587
+<INFO>    Pixels network training - Current epoch: 270 | Current error: 1.8013814918663
+<INFO>    Pixels network training - Current epoch: 280 | Current error: 1.787888659414543
+<INFO>    Pixels network training - Current epoch: 290 | Current error: 1.7745634061682551
+<INFO>    Pixels network training - Current epoch: 300 | Current error: 1.754668261617098
+<INFO>    Pixels network training - Current epoch: 310 | Current error: 1.7368421300680925
+<INFO>    Pixels network training - Current epoch: 320 | Current error: 1.7221219702100832
+<INFO>    Pixels network training - Current epoch: 330 | Current error: 1.7056694453236274
+<INFO>    Pixels network training - Current epoch: 340 | Current error: 1.6822859266273498
+<INFO>    Pixels network training - Current epoch: 350 | Current error: 1.6493599584547998
+<INFO>    Pixels network training - Current epoch: 360 | Current error: 1.596535996324366
+<INFO>    Pixels network training - Current epoch: 370 | Current error: 1.5357236253742788
+<INFO>    Pixels network training - Current epoch: 380 | Current error: 1.4739975312373297
+<INFO>    Pixels network training - Current epoch: 390 | Current error: 1.4139037002603116
+<INFO>    Pixels network training - Current epoch: 400 | Current error: 1.3458472827249381
+<INFO>    Pixels network training - Current epoch: 410 | Current error: 1.275927572810526
+<INFO>    Pixels network training - Current epoch: 420 | Current error: 1.2029457374782297
+<INFO>    Pixels network training - Current epoch: 430 | Current error: 1.1156034209091938
+<INFO>    Pixels network training - Current epoch: 440 | Current error: 1.03417378086115
+<INFO>    Pixels network training - Current epoch: 450 | Current error: 0.9609058432715215
+<INFO>    Pixels network training - Current epoch: 460 | Current error: 0.8822072737429082
+<INFO>    Pixels network training - Current epoch: 470 | Current error: 0.7984309027012848
+<INFO>    Pixels network training - Current epoch: 480 | Current error: 0.7217853702158732
+<INFO>    Pixels network training - Current epoch: 490 | Current error: 0.6575313212295802
+<INFO>    Pixels network training - Current epoch: 500 | Current error: 0.6030240019106785
+<INFO>    Pixels network training - Current epoch: 510 | Current error: 0.5502118491788656
+<INFO>    Pixels network training - Current epoch: 520 | Current error: 0.49669718572320815
+<INFO>    Pixels network training - Current epoch: 530 | Current error: 0.4391762927055238
+<INFO>    Pixels network training - Current epoch: 540 | Current error: 0.37120000419539106
+<INFO>    Pixels network training - Current epoch: 550 | Current error: 0.2911751744587445
+<INFO>    Pixels network training - Current epoch: 560 | Current error: 0.21546743511455246
+<INFO>    Pixels network training - Current epoch: 570 | Current error: 0.15638586735562862
+<INFO>    Pixels network training - Current epoch: 580 | Current error: 0.11606321355489019
+<INFO>    Pixels network training - Current epoch: 590 | Current error: 0.09022292149621502
+<INFO>    Pixels network training - Current epoch: 600 | Current error: 0.07423633975528507
+<INFO>    Pixels network training - Current epoch: 610 | Current error: 0.06353699517983183
+<INFO>    Pixels network training - Current epoch: 620 | Current error: 0.055813806753360944
+<INFO>    Pixels network training - Current epoch: 630 | Current error: 0.04992615658827413
+<INFO>    Pixels network training - Current epoch: 640 | Current error: 0.04525773246806226
+<INFO>    Pixels network training - Current epoch: 650 | Current error: 0.04144628600470397
+<INFO>    Pixels network training - Current epoch: 660 | Current error: 0.03826395333841245
+<INFO>    Pixels network training - Current epoch: 670 | Current error: 0.035559461675755986
+<INFO>    Pixels network training - Current epoch: 680 | Current error: 0.033227941715022614
+<INFO>    Pixels network training - Current epoch: 690 | Current error: 0.03119407766028855
+<INFO>    Pixels network training - Current epoch: 700 | Current error: 0.029402170787800764
+<INFO>    Pixels network training - Current epoch: 710 | Current error: 0.027810006996496852
+<INFO>    Pixels network training - Current epoch: 720 | Current error: 0.026384922564552753
+<INFO>    Pixels network training - Current epoch: 730 | Current error: 0.025101193044816478
+<INFO>    Pixels network training - Current epoch: 740 | Current error: 0.02393824773667106
+<INFO>    Pixels network training - Current epoch: 750 | Current error: 0.022879416472489592
+<INFO>    Pixels network training - Current epoch: 760 | Current error: 0.021911029967354233
+<INFO>    Pixels network training - Current epoch: 770 | Current error: 0.021021761266447364
+<INFO>    Pixels network training - Current epoch: 780 | Current error: 0.02020213543634569
+<INFO>    Pixels network training - Current epoch: 790 | Current error: 0.019444159037430818
+<INFO>    Pixels network training - Current epoch: 800 | Current error: 0.018741036359540324
+<INFO>    Pixels network training - Current epoch: 810 | Current error: 0.01808694945006737
+<INFO>    Pixels network training - Current epoch: 820 | Current error: 0.017476885668065528
+<INFO>    Pixels network training - Current epoch: 830 | Current error: 0.016906501073637635
+<INFO>    Pixels network training - Current epoch: 840 | Current error: 0.01637201114347584
+<INFO>    Pixels network training - Current epoch: 850 | Current error: 0.015870102548604877
+<INFO>    Pixels network training - Current epoch: 860 | Current error: 0.015397861333706284
+<INFO>    Pixels network training - Current epoch: 870 | Current error: 0.01495271399402476
+<INFO>    Pixels network training - Current epoch: 880 | Current error: 0.014532378788154172
+<INFO>    Pixels network training - Current epoch: 890 | Current error: 0.014134825244229826
+<INFO>    Pixels network training - Current epoch: 900 | Current error: 0.013758240276782402
+<INFO>    Pixels network training - Current epoch: 910 | Current error: 0.013400999676302618
+<INFO>    Pixels network training - Current epoch: 920 | Current error: 0.013061643994816107
+<INFO>    Pixels network training - Current epoch: 930 | Current error: 0.012738858050709434
+<INFO>    Pixels network training - Current epoch: 940 | Current error: 0.012431453430527695
+<INFO>    Pixels network training - Current epoch: 950 | Current error: 0.012138353485873632
+<INFO>    Pixels network training - Current epoch: 960 | Current error: 0.011858580418139938
+<INFO>    Pixels network training - Current epoch: 970 | Current error: 0.011591244118665831
+<INFO>    Pixels network training - Current epoch: 980 | Current error: 0.011335532491521723
+<INFO>    Pixels network training - Current epoch: 990 | Current error: 0.011090703033872355
+<INFO>    Pixels network training - Current epoch: 1000 | Current error: 0.010856075487314711
+<INFO>    Pixels network training - Current epoch: 1010 | Current error: 0.01063102540470414
+<INFO>    Pixels network training - Current epoch: 1020 | Current error: 0.010414978502299239
+<INFO>    Pixels network training - Current epoch: 1030 | Current error: 0.01020740568776257
+<INFO>    Pixels network training - Current epoch: 1040 | Current error: 0.010007818671584548
+<INFO>    Pixels network training finished in 294ms | Total of epochs: 1041 | Error: 0.009988281510499169
+<INFO>    Weights file "E:\KST\Tr01\pixels.mlp" saved.
+<INFO>    Training finished in 295.174 seconds

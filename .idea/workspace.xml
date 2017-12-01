@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="996fa0bf-6765-4e91-b7d2-8545b0fa67ab" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/json-simple-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/Main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/NeuralNetworkFacade.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/mlp/HiddenLayer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/mlp/HiddenNeuron.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/mlp/InputLayer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/mlp/InputNeuron.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/mlp/Layer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/mlp/MultilayerPerceptron.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/mlp/NetworkTrainingListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/mlp/Neuron.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/mlp/OutputLayer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/mlp/OutputNeuron.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/mlp/Pattern.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/mlp/Utils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/model/StrokePattern.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/model/TrainingConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/util/FileUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/util/Log.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/util/PreNetworkUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/util/Utils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/kansus/kstrainer/util/ValidationUtils.java" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MultilayerPerceptron.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/MultilayerPerceptron.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4896">
+              <caret line="300" column="70" lean-forward="false" selection-start-line="300" selection-start-column="70" selection-end-line="300" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NeuralNetworkFacade.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="52" column="65" lean-forward="false" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="32" column="66" lean-forward="true" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/FileUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1411">
+              <caret line="97" column="99" lean-forward="false" selection-start-line="97" selection-start-column="99" selection-end-line="97" selection-end-column="99" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="characters.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/production/resources/characters.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2380">
+              <caret line="140" column="48" lean-forward="false" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>public static</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>private static</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="C:\Users\charl\.gradle\wrapper\dists\gradle-4.3.1-bin\7yzdu24db77gi3zukl2a7o0xx\gradle-4.3.1" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4.3.1" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="Kana Sensei Trainer" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="Kana Sensei Trainer" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'Kana Sensei Trainer'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'Kana Sensei Trainer'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'Kana Sensei Trainer'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'Kana Sensei Trainer'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'Kana Sensei Trainer'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'Kana Sensei Trainer'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'Kana Sensei Trainer'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'Kana Sensei Trainer'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'Kana Sensei Trainer'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="6033465844527" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2236465981" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1124708390" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="Kana Sensei Trainer" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/ant-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/ant-launcher-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-base-services-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-base-services-groovy-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-build-cache-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-build-option-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-cli-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-core-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-core-api-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-docs-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-installation-beacon-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-jvm-services-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-kotlin-dsl-0.12.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-kotlin-dsl-tooling-builders-0.12.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-kotlin-dsl-tooling-models-0.12.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-launcher-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-logging-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-messaging-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-model-core-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-model-groovy-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-native-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-persistent-cache-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-process-services-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-resources-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-runtime-api-info-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-tooling-api-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-wrapper-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-announce-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-antlr-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-build-cache-http-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-build-comparison-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-build-init-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-code-quality-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-composite-builds-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-dependency-management-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-diagnostics-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-ear-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-ide-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-ide-native-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-ide-play-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-ivy-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-jacoco-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-javascript-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-language-groovy-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-language-java-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-language-jvm-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-language-native-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-language-scala-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-maven-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-osgi-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-platform-base-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-platform-jvm-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-platform-native-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-platform-play-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-plugin-development-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-plugin-use-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-plugins-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-publish-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-reporting-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-resources-gcs-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-resources-http-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-resources-s3-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-resources-sftp-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-scala-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-signing-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-test-kit-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-testing-base-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-testing-jvm-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-testing-native-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-tooling-api-builders-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-version-control-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-workers-4.3.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/MultilayerPerceptron.java" />
+        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/networks/readme.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="294" />
+    <option name="y" value="15" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Kana Sensei Trainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kana Sensei Trainer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kana Sensei Trainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kana Sensei Trainer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kana Sensei Trainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kana Sensei Trainer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kana Sensei Trainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kana Sensei Trainer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kana Sensei Trainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kana Sensei Trainer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kstrainer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kana Sensei Trainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kana Sensei Trainer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\charl\IdeaProjects\Kana Sensei Trainer\src\main\java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Evaluate strokes">
+    <configuration name="Evaluate strokes" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.kansus.kstrainer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.kansus.kstrainer.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="evaluate strokes ../networks/STR/strokes.mlp e,s,s" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Kana_Sensei_Trainer_main" />
+      <envs />
+    </configuration>
+    <configuration name="Train pixels" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.kansus.kstrainer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.kansus.kstrainer.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="train pixels config.json" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Kana_Sensei_Trainer_main" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Evaluate strokes" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Train pixels" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Train pixels" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="996fa0bf-6765-4e91-b7d2-8545b0fa67ab" name="Default" comment="" />
+      <created>1510505292625</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1510505292625</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16542949" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/networks/STR/Evaluation/Results/e, e, e.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/MultilayerPerceptron.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5100">
+          <caret line="300" column="70" lean-forward="false" selection-start-line="300" selection-start-column="70" selection-end-line="300" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="97" column="99" lean-forward="false" selection-start-line="97" selection-start-column="99" selection-end-line="97" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/resources/characters.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2380">
+          <caret line="140" column="48" lean-forward="true" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="51" lean-forward="true" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/Layer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/StrokePattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/NetworkTrainingListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/characters/01.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/networks/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="8" column="80" lean-forward="false" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/input/hiragana/h.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/characters.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/networks/STR/Evaluation/Results/e, e, e.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/MultilayerPerceptron.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4896">
+          <caret line="300" column="70" lean-forward="false" selection-start-line="300" selection-start-column="70" selection-end-line="300" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/resources/networks/STR/Patterns/strokes.json" />
+    <entry file="file://$PROJECT_DIR$/out/production/resources/networks/STR/config.json" />
+    <entry file="file://$PROJECT_DIR$/out/production/resources/networks/STR/strokes.mlp" />
+    <entry file="file://$PROJECT_DIR$/out/production/resources/networks/STR/log.txt" />
+    <entry file="file://$PROJECT_DIR$/out/production/resources/networks/PX/Evaluation/Normalization/a1.png" />
+    <entry file="file://$PROJECT_DIR$/out/production/resources/networks/STR/Evaluation/Results/e, e, e.txt" />
+    <entry file="file://$PROJECT_DIR$/out/production/resources/networks/PX/Normalization/Default/1.png" />
+    <entry file="file://$PROJECT_DIR$/out/production/resources/networks/PX/Normalization/Default/24.png" />
+    <entry file="file://$PROJECT_DIR$/out/production/resources/networks/PX/Patterns/Default/1.png" />
+    <entry file="file://$PROJECT_DIR$/out/production/resources/networks/PX/Patterns/Default/2.png" />
+    <entry file="file://$PROJECT_DIR$/out/production/resources/networks/PX/Patterns/Default/20.png" />
+    <entry file="file://$PROJECT_DIR$/out/production/resources/networks/PX/config.json" />
+    <entry file="file://$PROJECT_DIR$/out/production/resources/characters.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2380">
+          <caret line="140" column="48" lean-forward="false" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="97" column="99" lean-forward="false" selection-start-line="97" selection-start-column="99" selection-end-line="97" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="52" column="65" lean-forward="false" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="32" column="66" lean-forward="true" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
