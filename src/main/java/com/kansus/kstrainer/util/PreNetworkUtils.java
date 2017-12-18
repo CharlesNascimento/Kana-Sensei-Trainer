@@ -18,7 +18,7 @@ public class PreNetworkUtils {
 
 	private static HashMap<String, Integer> directionsRepresentations = new HashMap<>();
 	
-	private static int lowerValue = 0;
+	private static int lowerValue = -1;
 
 	static {
 		directionsRepresentations.put("n", 0);

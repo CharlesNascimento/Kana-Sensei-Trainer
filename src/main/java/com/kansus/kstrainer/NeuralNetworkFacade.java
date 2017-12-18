@@ -153,18 +153,18 @@ public class NeuralNetworkFacade implements NetworkTrainingListener {
         int[] input = PreNetworkUtils.normalizePixels(charImage, convolveImage, negativeNormalization);
         Utils.savePixelsNormalizationToFile(input, new File("E:\\"), "evaluation");
         double[] output = pixelsNeuralNetwork.evaluate(input);
+        double outputsSum = 0;
 
         Log.write("<INFO>    Pixels evaluation outputs: ");
         for (int i = 0; i < output.length; i++) {
-            double rating0To10 = Utils.rangeToRange(output[i], -1, 1, 0, 10);
-            Log.write("<INFO>    Output[" + i + "] = " + output[i] + " | Rating: " + rating0To10);
+            Log.write("<INFO>    Output[" + i + "] = " + output[i]);
+            outputsSum += output[i];
         }
 
         double highestValue = Utils.highestValue(output);
-        double rating0To10 = Utils.rangeToRange(highestValue, -1, 1, 0, 10);
 
         Log.write("<INFO>    Highest Output: " + highestValue);
-        Log.write("<INFO>    Highest Output Final Rating: " + rating0To10);
+        Log.write("<INFO>    Outputs Mean: " + outputsSum / output.length);
 
         return output;
     }
@@ -173,9 +173,7 @@ public class NeuralNetworkFacade implements NetworkTrainingListener {
      * Evaluates the given pixels against the neural network loaded with the
      * weights of the given weights file.
      *
-     * @param weightsFile The weights file.
-     * @param charImage   The image with the pixels to be evaluated.
-     * @return The array of outputs of the neural network.
+     * @param trainingConfig The neural network configuration.
      */
     public void evaluatePixelsNetwork(TrainingConfig trainingConfig) {
         String rootFolder = trainingConfig.getConfigFile().getParent() + File.separator;
@@ -195,8 +193,8 @@ public class NeuralNetworkFacade implements NetworkTrainingListener {
         File[] samplesDirImages = samplesDir.listFiles(ValidationUtils.imagesFileFilter);
 
         if (samplesDirImages.length == 0) {
-            Log.write(
-                    "<WARNING>    No images have been found in the Evaluation\\Samples folder, no evaluation could be done.");
+            Log.write("<WARNING>    No images have been found in the Evaluation" +
+                    "n\\Samples folder, no evaluation could be done.");
         }
 
         for (File imageFile : samplesDirImages) {
@@ -209,18 +207,18 @@ public class NeuralNetworkFacade implements NetworkTrainingListener {
                 int[] input = PreNetworkUtils.normalizePixels(charImage, convolveImage, negativeNormalization);
                 Utils.savePixelsNormalizationToFile(input, testsNormsDir, filename);
                 double[] output = pixelsNeuralNetwork.evaluate(input);
+                double outputsSum = 0;
 
-                Log.write("<INFO>    Pixels evaluation outputs: ");
+                Log.write("<INFO>    Pixels evaluation outputs for sample \"" + filename + "\": ");
                 for (int i = 0; i < output.length; i++) {
-                    double rating0To10 = Utils.rangeToRange(output[i], -1, 1, 0, 10);
-                    Log.write("<INFO>    Output[" + i + "] = " + output[i] + " | Rating: " + rating0To10);
+                    outputsSum += output[i];
+                    Log.write("<INFO>    Output[" + i + "] = " + output[i]);
                 }
 
                 double highestValue = Utils.highestValue(output);
-                double rating0To10 = Utils.rangeToRange(highestValue, -1, 1, 0, 10);
 
                 Log.write("<INFO>    Highest Output: " + highestValue);
-                Log.write("<INFO>    Highest Final Rating: " + rating0To10);
+                Log.write("<INFO>    Outputs Mean: " + outputsSum / output.length + "\n");
 
                 Log.closeWriter();
             } catch (IOException e) {
