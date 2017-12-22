@@ -11,6 +11,9 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
+import com.kansus.kstrainer.core.Project;
+import com.kansus.kstrainer.core.Test;
+import com.kansus.kstrainer.core.Workspace;
 import com.kansus.kstrainer.mlp.MultilayerPerceptron;
 import com.kansus.kstrainer.mlp.NetworkTrainingListener;
 import com.kansus.kstrainer.model.StrokePattern;
@@ -29,16 +32,8 @@ import com.kansus.kstrainer.util.ValidationUtils;
  */
 public class NeuralNetworkFacade implements NetworkTrainingListener {
 
-    public static final int NEURAL_NETWORK_ALL = 0;
-    public static final int NEURAL_NETWORK_PIXELS = 1;
-    public static final int NEURAL_NETWORK_STROKES = 2;
-
     private MultilayerPerceptron pixelsNeuralNetwork;
     private MultilayerPerceptron strokesNeuralNetwork;
-
-    private static final String TEST_SAMPLES_FOLDER = "Evaluation\\Samples";
-    private static final String TEST_NORMALIZATION_FOLDER = "Evaluation\\Normalization";
-    private static final String TEST_RESULTS_FOLDER = "Evaluation\\Results";
 
     private String currentTraining;
 
@@ -59,7 +54,7 @@ public class NeuralNetworkFacade implements NetworkTrainingListener {
         loadWeightsFile(pixelsNeuralNetwork, trainingConfig.getWeightsFile());
 
         ArrayList<File> inputs = trainingConfig.getInputs();
-        File normalizationFolder = new File(rootFolder + "Normalization");
+        File normalizationFolder = new File(rootFolder + "Intermediate\\Normalization");
         FileUtils.mkDir(normalizationFolder);
 
         for (int i = 0; i < inputs.size(); i++) {
@@ -90,7 +85,6 @@ public class NeuralNetworkFacade implements NetworkTrainingListener {
         currentTraining = "Pixels network";
         pixelsNeuralNetwork.train(this);
 
-        FileUtils.mkDir(new File(rootFolder, TEST_SAMPLES_FOLDER));
         saveWeightsFile(pixelsNeuralNetwork, trainingConfig.getWeightsFile());
 
         double totalTime = System.currentTimeMillis() - startTime;
@@ -175,14 +169,13 @@ public class NeuralNetworkFacade implements NetworkTrainingListener {
      *
      * @param trainingConfig The neural network configuration.
      */
-    public void evaluatePixelsNetwork(TrainingConfig trainingConfig) {
-        String rootFolder = trainingConfig.getConfigFile().getParent() + File.separator;
-        File samplesDir = new File(rootFolder + TEST_SAMPLES_FOLDER);
-        File testsNormsDir = new File(rootFolder + TEST_NORMALIZATION_FOLDER);
-        File testResultsDir = new File(rootFolder + TEST_RESULTS_FOLDER);
-        FileUtils.mkDir(samplesDir);
-        FileUtils.mkDir(testsNormsDir);
-        FileUtils.mkDir(testResultsDir);
+    public void evaluatePixelsNetwork(Test test) {
+        Project project = Workspace.getInstance().getCurrentProject();
+        TrainingConfig trainingConfig = project.getConfiguration();
+
+        FileUtils.mkDir(test.getInputDirectory());
+        FileUtils.mkDir(test.getIntermediateDirectory());
+        FileUtils.mkDir(test.getOutputDirectory());
 
         boolean convolveImage = trainingConfig.isConvolveImage();
         boolean negativeNormalization = trainingConfig.isNegativeNormalization();
@@ -190,22 +183,35 @@ public class NeuralNetworkFacade implements NetworkTrainingListener {
         pixelsNeuralNetwork = Utils.createNetworkFromConfig(trainingConfig);
         pixelsNeuralNetwork.loadWeightsFromFile(trainingConfig.getWeightsFile());
 
-        File[] samplesDirImages = samplesDir.listFiles(ValidationUtils.imagesFileFilter);
+        File[] samplesDirImages = test.getInputDirectory().listFiles(ValidationUtils.imagesFileFilter);
 
-        if (samplesDirImages.length == 0) {
+        if (samplesDirImages == null || samplesDirImages.length == 0) {
             Log.write("<WARNING>    No images have been found in the Evaluation" +
                     "n\\Samples folder, no evaluation could be done.");
+            return;
         }
+
+        File a = new File(Workspace.getInstance().getCurrentProject().getTestNamed("Default").getInputDirectory(), "1.png");
+        BufferedImage bi = null;
+        try {
+            bi = ImageIO.read(a);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        int[] anorm = PreNetworkUtils.normalizePixels(bi, convolveImage, negativeNormalization);
 
         for (File imageFile : samplesDirImages) {
             try {
                 String filename = FileUtils.getFilenameWithoutExtension(imageFile);
-                FileWriter fw = new FileWriter(testResultsDir + File.separator + filename + ".txt");
+                FileWriter fw = new FileWriter(new File(test.getOutputDirectory(), filename + ".txt"));
                 Log.setWriter(new BufferedWriter(fw));
 
                 BufferedImage charImage = ImageIO.read(imageFile);
                 int[] input = PreNetworkUtils.normalizePixels(charImage, convolveImage, negativeNormalization);
-                Utils.savePixelsNormalizationToFile(input, testsNormsDir, filename);
+                double sim = Utils.cosineSimilarity(input, anorm);
+                System.out.println("Cosine Similarity: " + sim);
+                System.out.println("Rating: " + Utils.rangeToRange(sim, -1, 1, 0, 10));
+                Utils.savePixelsNormalizationToFile(input, test.getNormalizationDirectory(), filename);
                 double[] output = pixelsNeuralNetwork.evaluate(input);
                 double outputsSum = 0;
 
@@ -231,13 +237,12 @@ public class NeuralNetworkFacade implements NetworkTrainingListener {
      * Evaluates the given pixels against the neural network loaded with the
      * weights of the given weights file.
      *
-     * @param weightsFile The weights file.
-     * @param charImage   The image with the pixels to be evaluated.
-     * @return The array of outputs of the neural network.
+     * @param trainingConfig The configuration of the neural network.
      */
-    public void evaluateStrokesNetwork(TrainingConfig trainingConfig) {
-        String rootFolder = trainingConfig.getConfigFile().getParent() + File.separator;
-        File testResultsDir = new File(rootFolder + TEST_RESULTS_FOLDER);
+    public void evaluateStrokesNetwork(Test test) {
+        TrainingConfig trainingConfig = Workspace.getInstance().getCurrentProject().getConfiguration();
+
+        File testResultsDir = test.getOutputDirectory();
         FileUtils.mkDir(testResultsDir);
 
         boolean negativeNormalization = trainingConfig.isNegativeNormalization();
@@ -251,7 +256,7 @@ public class NeuralNetworkFacade implements NetworkTrainingListener {
             for (StrokePattern strokePattern : strokePatterns) {
                 try {
                     String strokes = strokePattern.getName();
-                    FileWriter fw = new FileWriter(testResultsDir + File.separator + strokes + ".txt");
+                    FileWriter fw = new FileWriter(new File(testResultsDir, strokes + ".txt"));
                     Log.setWriter(new BufferedWriter(fw));
 
                     Log.write("Starting evaluation for the [" + strokes + "] pattern...");

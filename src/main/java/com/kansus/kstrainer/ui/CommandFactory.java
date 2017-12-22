@@ -1,4 +1,4 @@
-package com.kansus.kstrainer;
+package com.kansus.kstrainer.ui;
 
 class CommandFactory {
 

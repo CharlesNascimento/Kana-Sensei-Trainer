@@ -10,16 +10,7 @@ public class ValidationUtils {
 	public static ArrayList<String> validDirections = new ArrayList<>();
 	public static ArrayList<String> validNeuralNetworks = new ArrayList<>();
 	
-	public static FileFilter imagesFileFilter = new FileFilter() {
-	
-		@Override
-		public boolean accept(File pathname) {
-			if (validFormats.contains(Utils.getFileExtension(pathname))) {
-				return true;
-			}
-			return false;
-		}
-	};
+	public static FileFilter imagesFileFilter = pathname -> validFormats.contains(Utils.getFileExtension(pathname));
 	
 	static {
 		validDirections.add("n");

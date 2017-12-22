@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.kansus.kstrainer.core.Workspace;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -18,171 +19,167 @@ import com.kansus.kstrainer.model.TrainingConfig;
 
 /**
  * Class with utility methods to deal with files.
- * 
+ *
  * @author Charles Nascimento
  */
 public class FileUtils {
 
-	/**
-	 * Loads the training configuration file.
-	 * 
-	 * @param trainingConfigFile The training configuration file.
-	 * @return All the configuration data in the file.
-	 */
-	public static TrainingConfig loadTrainingConfiguration(File trainingConfigFile) {
-		ArrayList<File> trainingInputs = new ArrayList<>();
-		TrainingConfig trainingConfig = new TrainingConfig();
+    /**
+     * Loads the training configuration file.
+     *
+     * @param trainingConfigFile The training configuration file.
+     * @return All the configuration data in the file.
+     */
+    public static TrainingConfig loadTrainingConfiguration(File trainingConfigFile) {
+        ArrayList<File> trainingInputs = new ArrayList<>();
+        TrainingConfig trainingConfig = new TrainingConfig();
 
-		try {
-			JSONParser parser = new JSONParser();
-			JSONObject trainingObject = (JSONObject) parser.parse(new FileReader(trainingConfigFile));
+        try {
+            JSONParser parser = new JSONParser();
+            JSONObject trainingObject = (JSONObject) parser.parse(new FileReader(trainingConfigFile));
 
-			trainingConfig.setConfigFile(trainingConfigFile);
-			File weightsFile = new File(trainingConfigFile.getParentFile(),
-			        (String) trainingObject.get("weights_file"));
-			trainingConfig.setWeightsFile(weightsFile);
-			int inputNeuronsCount = (int) (long) trainingObject.get("input_neurons_count");
-			trainingConfig.setInputNeuronsCount(inputNeuronsCount);
-			int hiddenNeuronsCount = (int) (long) trainingObject.get("hidden_neurons_count");
-			trainingConfig.setHiddenNeuronsCount(hiddenNeuronsCount);
-			int outputNeuronsCount = (int) (long) trainingObject.get("output_neurons_count");
-			trainingConfig.setOutputNeuronsCount(outputNeuronsCount);
-			double learningRate = (double) trainingObject.get("learning_rate");
-			trainingConfig.setLearningRate(learningRate);
-			double minimumError = (double) trainingObject.get("minimum_error");
-			trainingConfig.setMinimumError(minimumError);
-			int maxEpochs = (int) (long) trainingObject.get("max_epochs");
-			trainingConfig.setMaxEpochs(maxEpochs);
+            File outputDir = Workspace.getInstance().getCurrentProject().getOutputDirectory();
 
-			Object convolveImageObj = trainingObject.get("convolve_image");
-			boolean convolveImage = convolveImageObj != null ? (boolean) convolveImageObj : false;
-			trainingConfig.setConvolveImage(convolveImage);
+            trainingConfig.setConfigFile(trainingConfigFile);
+            File weightsFile = new File(outputDir, (String) trainingObject.get("weights_file"));
+            trainingConfig.setWeightsFile(weightsFile);
+            int inputNeuronsCount = (int) (long) trainingObject.get("input_neurons_count");
+            trainingConfig.setInputNeuronsCount(inputNeuronsCount);
+            int hiddenNeuronsCount = (int) (long) trainingObject.get("hidden_neurons_count");
+            trainingConfig.setHiddenNeuronsCount(hiddenNeuronsCount);
+            int outputNeuronsCount = (int) (long) trainingObject.get("output_neurons_count");
+            trainingConfig.setOutputNeuronsCount(outputNeuronsCount);
+            double learningRate = (double) trainingObject.get("learning_rate");
+            trainingConfig.setLearningRate(learningRate);
+            double minimumError = (double) trainingObject.get("minimum_error");
+            trainingConfig.setMinimumError(minimumError);
+            int maxEpochs = (int) (long) trainingObject.get("max_epochs");
+            trainingConfig.setMaxEpochs(maxEpochs);
 
-			Object negativeNormObj = trainingObject.get("negative_normalization");
-			boolean negativeNormalization = negativeNormObj != null ? (boolean) negativeNormObj : false;
-			trainingConfig.setNegativeNormalization(negativeNormalization);
+            Object convolveImageObj = trainingObject.get("convolve_image");
+            boolean convolveImage = convolveImageObj != null && (boolean) convolveImageObj;
+            trainingConfig.setConvolveImage(convolveImage);
 
-			JSONArray inputsArray = (JSONArray) trainingObject.get("inputs");
-			String rootFolder = trainingConfig.getConfigFile().getParent();
+            Object negativeNormObj = trainingObject.get("negative_normalization");
+            boolean negativeNormalization = negativeNormObj != null && (boolean) negativeNormObj;
+            trainingConfig.setNegativeNormalization(negativeNormalization);
 
-			for (Object t : inputsArray) {
-				JSONObject inputObject = (JSONObject) t;
+            JSONArray inputsArray = (JSONArray) trainingObject.get("inputs");
+            String rootFolder = trainingConfig.getConfigFile().getParent();
 
-				File inputFile = new File(rootFolder, (String) inputObject.get("path"));
+            for (Object t : inputsArray) {
+                JSONObject inputObject = (JSONObject) t;
 
-				trainingInputs.add(inputFile);
-			}
+                File inputFile = new File(rootFolder, (String) inputObject.get("path"));
 
-			trainingConfig.setInputs(trainingInputs);
-		} catch (IOException ioe) {
-			ioe.printStackTrace();
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
+                trainingInputs.add(inputFile);
+            }
 
-		return trainingConfig;
-	}
+            trainingConfig.setInputs(trainingInputs);
+        } catch (IOException | ParseException ioe) {
+            ioe.printStackTrace();
+        }
 
-	/**
-	 * Loads a file containing the stroke patterns used to train the neural
-	 * network.
-	 * 
-	 * @param strokePatternFiles The file with the stroke patterns.
-	 * @return All the configurations in the file.
-	 */
-	public static ArrayList<StrokePattern> loadStrokePatterns(File strokePatternsFile) {
-		ArrayList<StrokePattern> strokePatterns = new ArrayList<StrokePattern>();
+        return trainingConfig;
+    }
 
-		try {
-			JSONParser parser = new JSONParser();
-			JSONArray strokePatternsArray = (JSONArray) parser.parse(new FileReader(strokePatternsFile));
+    /**
+     * Loads a file containing the stroke patterns used to train the neural
+     * network.
+     *
+     * @param strokePatternFiles The file with the stroke patterns.
+     * @return All the configurations in the file.
+     */
+    public static ArrayList<StrokePattern> loadStrokePatterns(File strokePatternsFile) {
+        ArrayList<StrokePattern> strokePatterns = new ArrayList<StrokePattern>();
 
-			for (Object spo : strokePatternsArray) {
-				JSONObject strokePatternsObject = (JSONObject) spo;
+        try {
+            JSONParser parser = new JSONParser();
+            JSONArray strokePatternsArray = (JSONArray) parser.parse(new FileReader(strokePatternsFile));
 
-				int id = (int) (long) strokePatternsObject.get("id");
-				String pattern = (String) strokePatternsObject.get("pattern");
+            for (Object spo : strokePatternsArray) {
+                JSONObject strokePatternsObject = (JSONObject) spo;
 
-				strokePatterns.add(new StrokePattern(id, pattern, null));
-			}
-		} catch (IOException ioe) {
-			ioe.printStackTrace();
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
+                int id = (int) (long) strokePatternsObject.get("id");
+                String pattern = (String) strokePatternsObject.get("pattern");
 
-		return strokePatterns;
-	}
+                strokePatterns.add(new StrokePattern(id, pattern, null));
+            }
+        } catch (IOException | ParseException ioe) {
+            ioe.printStackTrace();
+        }
 
-	/**
-	 * Converts a normalization string (sequence of -1 and 1) into an integer
-	 * array.
-	 * 
-	 * @param normalizationString The normalization string.
-	 * @return An array of integer values.
-	 */
-	public static int[] normalizationStringToArray(String normalizationString) {
-		String[] splitedValues = normalizationString.split(",");
-		int[] array = new int[splitedValues.length];
+        return strokePatterns;
+    }
 
-		for (int i = 0; i < splitedValues.length; i++) {
-			array[i] = Integer.parseInt(splitedValues[i]);
-		}
+    /**
+     * Converts a normalization string (sequence of -1 and 1) into an integer
+     * array.
+     *
+     * @param normalizationString The normalization string.
+     * @return An array of integer values.
+     */
+    public static int[] normalizationStringToArray(String normalizationString) {
+        String[] splitedValues = normalizationString.split(",");
+        int[] array = new int[splitedValues.length];
 
-		return array;
-	}
+        for (int i = 0; i < splitedValues.length; i++) {
+            array[i] = Integer.parseInt(splitedValues[i]);
+        }
 
-	@SuppressWarnings("unchecked")
-	public static void savePatternsToFile(HashMap<String, int[]> patterns) {
-		JSONArray patternsJsonArray = new JSONArray();
-		int id = 0;
+        return array;
+    }
 
-		for (Map.Entry<String, int[]> entry : patterns.entrySet()) {
-			JSONObject obj = new JSONObject();
-			String entryKey = entry.getKey().replace("[", "").replace("]", "");
-			int[] entryValue = entry.getValue();
-			String normalization = "";
+    public static void savePatternsToFile(HashMap<String, int[]> patterns) {
+        JSONArray patternsJsonArray = new JSONArray();
+        int id = 0;
 
-			for (int i = 0; i < entryValue.length; i++) {
-				normalization += entryValue[i];
+        for (Map.Entry<String, int[]> entry : patterns.entrySet()) {
+            JSONObject obj = new JSONObject();
+            String entryKey = entry.getKey().replace("[", "").replace("]", "");
+            int[] entryValue = entry.getValue();
+            StringBuilder normalization = new StringBuilder();
 
-				if (i < entryValue.length - 1) {
-					normalization += ",";
-				}
-			}
+            for (int i = 0; i < entryValue.length; i++) {
+                normalization.append(entryValue[i]);
 
-			obj.put("id", id++);
-			obj.put("pattern", entryKey);
-			obj.put("normalization", normalization);
-			patternsJsonArray.add(obj);
-		}
+                if (i < entryValue.length - 1) {
+                    normalization.append(",");
+                }
+            }
 
-		try {
-			FileWriter file = new FileWriter("stroke_patterns.json");
-			file.write(patternsJsonArray.toJSONString());
-			file.flush();
-			file.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+            obj.put("id", id++);
+            obj.put("pattern", entryKey);
+            obj.put("normalization", normalization.toString());
+            patternsJsonArray.add(obj);
+        }
 
-	/**
-	 * Creates the specified folder if it does not exist.
-	 * 
-	 * @param normalizationFolder The folder.
-	 */
-	public static void mkDir(File normalizationFolder) {
-		if (!normalizationFolder.exists() || !normalizationFolder.isDirectory()) {
-			normalizationFolder.mkdirs();
-		}
-	}
+        try {
+            FileWriter file = new FileWriter("stroke_patterns.json");
+            file.write(patternsJsonArray.toJSONString());
+            file.flush();
+            file.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-	/**
-	 * @param imageFile
-	 * @return
-	 */
-	public static String getFilenameWithoutExtension(File imageFile) {
-		return imageFile.getName().substring(0, imageFile.getName().length() - 4);
-	}
+    /**
+     * Creates the specified folder if it does not exist.
+     *
+     * @param normalizationFolder The folder.
+     */
+    public static void mkDir(File normalizationFolder) {
+        if (!normalizationFolder.exists() || !normalizationFolder.isDirectory()) {
+            normalizationFolder.mkdirs();
+        }
+    }
+
+    /**
+     * @param imageFile
+     * @return
+     */
+    public static String getFilenameWithoutExtension(File imageFile) {
+        return imageFile.getName().substring(0, imageFile.getName().length() - 4);
+    }
 }

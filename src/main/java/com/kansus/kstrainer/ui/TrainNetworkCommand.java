@@ -1,7 +1,8 @@
-package com.kansus.kstrainer;
+package com.kansus.kstrainer.ui;
 
+import com.kansus.kstrainer.NeuralNetworkFacade;
+import com.kansus.kstrainer.core.Workspace;
 import com.kansus.kstrainer.model.TrainingConfig;
-import com.kansus.kstrainer.util.FileUtils;
 import com.kansus.kstrainer.util.Log;
 import com.kansus.kstrainer.util.Utils;
 import com.kansus.kstrainer.util.ValidationUtils;
@@ -15,7 +16,7 @@ class TrainNetworkCommand implements Command {
 
     private String[] args;
 
-    public TrainNetworkCommand(String[] args) {
+    TrainNetworkCommand(String[] args) {
         this.args = args;
     }
 
@@ -26,11 +27,11 @@ class TrainNetworkCommand implements Command {
         }
 
         try {
-            File configFile = new File(args[2]);
-            TrainingConfig trainingConfig = FileUtils.loadTrainingConfiguration(configFile);
+            TrainingConfig trainingConfig = Workspace.getInstance().getCurrentProject().getConfiguration();
             NeuralNetworkFacade trainer = new NeuralNetworkFacade();
 
-            FileWriter fw = new FileWriter(new File(configFile.getParent(), "log.txt"));
+            File outputDir = Workspace.getInstance().getCurrentProject().getOutputDirectory();
+            FileWriter fw = new FileWriter(new File(outputDir, "log.txt"));
             Log.setWriter(new BufferedWriter(fw));
 
             if (args[1].equals("pixels")) {
@@ -47,7 +48,7 @@ class TrainNetworkCommand implements Command {
 
     @Override
     public boolean validate() {
-        if (args.length != 3) {
+        if (args.length != 2) {
             System.err.println("<ERROR>   Incorrect number of parameters.");
             System.err.println("<INFO>    Command syntax: train <neural-network> <config-file>");
             return false;
@@ -56,6 +57,26 @@ class TrainNetworkCommand implements Command {
         if (!Utils.equalsAny(args[1], ValidationUtils.validNeuralNetworks)) {
             System.err.println("<ERROR>   Invalid neural network: " + args[1]);
             return false;
+        }
+
+        return true;
+    }
+
+    private static boolean validateTrainingsConfigs(TrainingConfig trainingConfig) {
+        if (!trainingConfig.getWeightsFile().exists()) {
+            System.out.println("<WARNING> Weights file not found, a new file will be created.");
+        }
+
+        if (!trainingConfig.getWeightsFile().getName().endsWith("mlp")) {
+            System.err.println("<ERROR>   The weights file should be a valid .mlp file.");
+            return false;
+        }
+
+        for (File trainingInput : trainingConfig.getInputs()) {
+            if (!trainingInput.exists()) {
+                System.out.println("<ERROR>   Input file \'" + trainingInput.getName() + "\' not found.");
+                return false;
+            }
         }
 
         return true;
