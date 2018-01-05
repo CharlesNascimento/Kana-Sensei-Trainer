@@ -7,8 +7,8 @@ import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 
-import com.kansus.kstrainer.mlp.MultilayerPerceptron;
-import com.kansus.kstrainer.model.TrainingConfig;
+import com.kansus.kmlp.core.MultilayerPerceptron;
+import com.kansus.kstrainer.model.NeuralNetworkConfig;
 
 /**
  * Class with utility methods.
@@ -21,34 +21,34 @@ public class Utils {
     public static final String currentNetwork = "E:\\KST";
 
     /**
-     * Returns the highest value in the given array.
+     * Returns the index of the highest value in the given array.
      *
      * @param array The array.
-     * @return The highest value.
+     * @return The index of the highest value of the array.
      */
-    public static double highestValue(double[] array) {
-        double highestValue = -1;
+    public static int highestValueIndex(double[] array) {
+        int highestValueIndex = 0;
 
-        for (double value : array) {
-            if (value > highestValue) {
-                highestValue = value;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > array[highestValueIndex]) {
+                highestValueIndex = i;
             }
         }
 
-        return highestValue;
+        return highestValueIndex;
     }
 
     /**
      * Creates a new neural network based on the given training configuration
      * object.
      *
-     * @param trainingConfig The training configuration object.
+     * @param neuralNetworkConfig The training configuration object.
      * @return A new neural network.
      */
-    public static MultilayerPerceptron createNetworkFromConfig(TrainingConfig trainingConfig) {
-        int inputNeuronsCount = trainingConfig.getInputNeuronsCount();
-        int hiddenNeuronsCount = trainingConfig.getHiddenNeuronsCount();
-        int outputNeuronsCount = trainingConfig.getOutputNeuronsCount();
+    public static MultilayerPerceptron createNetworkFromConfig(NeuralNetworkConfig neuralNetworkConfig) {
+        int inputNeuronsCount = neuralNetworkConfig.getInputNeuronsCount();
+        int hiddenNeuronsCount = neuralNetworkConfig.getHiddenNeuronsCount();
+        int outputNeuronsCount = neuralNetworkConfig.getOutputNeuronsCount();
 
         MultilayerPerceptron network = new MultilayerPerceptron(
                 inputNeuronsCount,
@@ -56,9 +56,13 @@ public class Utils {
                 outputNeuronsCount
         );
 
-        network.setLearningRate(trainingConfig.getLearningRate());
-        network.setMaxEpochs(trainingConfig.getMaxEpochs());
-        network.setMinimumError(trainingConfig.getMinimumError());
+        network.setLearningRate(neuralNetworkConfig.getLearningRate());
+        network.setMaxEpochs(neuralNetworkConfig.getMaxEpochs());
+        network.setMinimumError(neuralNetworkConfig.getMinimumError());
+
+        if (neuralNetworkConfig.getWeightsFile().exists()) {
+            network.loadWeightsFromFile(neuralNetworkConfig.getWeightsFile());
+        }
 
         return network;
     }
@@ -104,9 +108,9 @@ public class Utils {
      * @param folder        The folder where to save the image.
      * @param fileName      The name of the image file.
      */
-    public static void savePixelsNormalizationToFile(int[] normalization, File folder, String fileName) {
-        final int IMAGE_WIDTH = 32;
-        final int IMAGE_HEIGHT = 32;
+    public static void savePixelsNormalizationToFile(double[] normalization, File folder, String fileName) {
+        final int IMAGE_WIDTH = (int) Math.sqrt(normalization.length);
+        final int IMAGE_HEIGHT = (int) Math.sqrt(normalization.length);
         BufferedImage image = new BufferedImage(IMAGE_WIDTH, IMAGE_HEIGHT, BufferedImage.TYPE_BYTE_BINARY);
         int x = 0, y = 0;
 

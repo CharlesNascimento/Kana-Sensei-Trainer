@@ -2,6 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="K-MLP_main" target="1.8" />
+      <module name="k-mlp_main" target="1.8" />
+      <module name="K-MLP_test" target="1.8" />
+      <module name="k-mlp_test" target="1.8" />
+      <module name="kana-sensei-trainer_main" target="1.9" />
+      <module name="kana-sensei-trainer_test" target="1.9" />
+      <module name="Kana_Sensei_Commons_main" target="1.8" />
+      <module name="Kana_Sensei_Commons_test" target="1.8" />
       <module name="Kana_Sensei_Trainer_main" target="1.9" />
       <module name="Kana_Sensei_Trainer_test" target="1.9" />
     </bytecodeTargetLevel>

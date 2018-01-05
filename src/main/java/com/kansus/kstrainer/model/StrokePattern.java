@@ -3,13 +3,20 @@ package com.kansus.kstrainer.model;
 public class StrokePattern {
 	
 	private int id;
-	private String name;
+	private String pattern;
 	private int[] normalization;
+
+	/**
+	 * Creates a new strokes pattern.
+	 */
+	public StrokePattern() {
+
+	}
 	
-	public StrokePattern(int id, String name, int[] normalization) {
+	public StrokePattern(int id, String pattern, int[] normalization) {
 		super();
 		this.id = id;
-		this.name = name;
+		this.pattern = pattern;
 		this.normalization = normalization;
 	}
 
@@ -17,8 +24,8 @@ public class StrokePattern {
 		return id;
 	}
 
-	public String getName() {
-		return name;
+	public String getPattern() {
+		return pattern;
 	}
 
 	public int[] getNormalization() {

@@ -18,7 +18,7 @@ public class PreNetworkUtils {
 
     private static HashMap<String, Integer> directionsRepresentations = new HashMap<>();
 
-    private static int lowerValue = -1;
+    public static byte lowerValue = -1;
 
     static {
         directionsRepresentations.put("n", 0);
@@ -55,15 +55,17 @@ public class PreNetworkUtils {
      *                      inverted.
      * @return An array with -1s and 1s representing the pixels of the image.
      */
-    public static int[] normalizePixels(BufferedImage image, boolean convolveImage, boolean negative) {
+    public static double[] normalizePixels(BufferedImage image, boolean convolveImage, boolean negative) {
         if (convolveImage) {
             image = convolveImage(image);
         }
 
-        int[] normalizedPixels = getPixels(image);
+        int[] inputPixels = image.getRGB(0, 0, image.getWidth(), image.getHeight(), null, 0, image.getWidth());
+        double[] normalizedPixels = new double[inputPixels.length];
 
-        for (int i = 0; i < normalizedPixels.length; i++) {
-            Color c = new Color(normalizedPixels[i]);
+
+        for (int i = 0; i < inputPixels.length; i++) {
+            Color c = new Color(inputPixels[i]);
             int mean = (c.getRed() + c.getGreen() + c.getBlue()) / 3;
 
             if (mean < 210) {
@@ -105,8 +107,8 @@ public class PreNetworkUtils {
      *                 inverted.
      * @return An array with -1s and 1s representing the given strokes.
      */
-    public static int[] normalizeStrokes(List<String> strokes, boolean negative) {
-        int[] normalizedStrokes = new int[32];
+    public static double[] normalizeStrokes(List<String> strokes, boolean negative) {
+        double[] normalizedStrokes = new double[32];
         Arrays.fill(normalizedStrokes, negative ? 1 : lowerValue);
 
         for (int i = 0; i < strokes.size(); i++) {
@@ -125,7 +127,7 @@ public class PreNetworkUtils {
      *                 inverted.
      * @return An array with -1s and 1s representing the given strokes.
      */
-    public static int[] normalizeStrokes(String strokes, boolean negative) {
+    public static double[] normalizeStrokes(String strokes, boolean negative) {
         return normalizeStrokes(Arrays.asList(strokes.replace(" ", "").split(",")), negative);
     }
 }

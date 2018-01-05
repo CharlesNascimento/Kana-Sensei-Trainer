@@ -1,6 +1,7 @@
 package com.kansus.kstrainer.ui;
 
 import com.kansus.kstrainer.core.Workspace;
+import com.kansus.kstrainer.ui.command.Command;
 
 import java.io.File;
 
@@ -33,7 +34,7 @@ public class Main {
     public static void main(String[] args) {
         Workspace workspace = Workspace.getInstance();
         workspace.setRootDirectory(new File("E:\\KST"));
-        workspace.setCurrentProjectByName("PX");
+        workspace.setCurrentProjectByName("K");
 
         CommandFactory commandFactory = new CommandFactory();
         Command command = commandFactory.create(args);

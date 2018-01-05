@@ -1,2 +1,3 @@
-rootProject.name = 'Kana Sensei Trainer'
-
+rootProject.name = 'kana-sensei-trainer'
+include 'kana-sensei-commons'
+include 'k-mlp'

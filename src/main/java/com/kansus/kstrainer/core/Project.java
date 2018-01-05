@@ -1,6 +1,6 @@
 package com.kansus.kstrainer.core;
 
-import com.kansus.kstrainer.model.TrainingConfig;
+import com.kansus.kstrainer.model.NeuralNetworkConfig;
 import com.kansus.kstrainer.util.FileUtils;
 
 import java.io.File;
@@ -13,7 +13,7 @@ public class Project {
     private static final String INTERMEDIATE_DIRECTORY_NAME = "Intermediate";
     private static final String OUTPUT_DIRECTORY_NAME = "Output";
     private static final String TEST_DIRECTORY_NAME = "Test";
-    private static final String CONFIG_FILE_NAME = "network.json";
+    public static final String CONFIG_FILE_NAME = "network.json";
 
     private File rootDirectory;
     private File inputDirectory;
@@ -23,7 +23,7 @@ public class Project {
 
     private HashMap<String, Test> tests = new HashMap<>();
 
-    private TrainingConfig trainingConfig;
+    private NeuralNetworkConfig neuralNetworkConfig;
 
     public Project(File rootDirectory) {
         this.rootDirectory = rootDirectory;
@@ -35,12 +35,12 @@ public class Project {
         scanTests();
     }
 
-    public TrainingConfig getConfiguration() {
-        if (trainingConfig != null) return trainingConfig;
+    public NeuralNetworkConfig getConfiguration() {
+        if (neuralNetworkConfig != null) return neuralNetworkConfig;
 
         File configFile = new File(rootDirectory, CONFIG_FILE_NAME);
-        trainingConfig = FileUtils.loadTrainingConfiguration(configFile);
-        return trainingConfig;
+        neuralNetworkConfig = FileUtils.loadTrainingConfiguration(configFile);
+        return neuralNetworkConfig;
     }
 
     public File getRootDirectory() {

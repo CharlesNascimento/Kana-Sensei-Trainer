@@ -1,13 +1,14 @@
 package com.kansus.kstrainer.util;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.kansus.kstrainer.core.Project;
 import com.kansus.kstrainer.core.Workspace;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -15,7 +16,8 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import com.kansus.kstrainer.model.StrokePattern;
-import com.kansus.kstrainer.model.TrainingConfig;
+import com.kansus.kstrainer.model.Character;
+import com.kansus.kstrainer.model.NeuralNetworkConfig;
 
 /**
  * Class with utility methods to deal with files.
@@ -30,42 +32,41 @@ public class FileUtils {
      * @param trainingConfigFile The training configuration file.
      * @return All the configuration data in the file.
      */
-    public static TrainingConfig loadTrainingConfiguration(File trainingConfigFile) {
+    public static NeuralNetworkConfig loadTrainingConfiguration(File trainingConfigFile) {
         ArrayList<File> trainingInputs = new ArrayList<>();
-        TrainingConfig trainingConfig = new TrainingConfig();
+        NeuralNetworkConfig neuralNetworkConfig = new NeuralNetworkConfig();
 
         try {
             JSONParser parser = new JSONParser();
             JSONObject trainingObject = (JSONObject) parser.parse(new FileReader(trainingConfigFile));
 
-            File outputDir = Workspace.getInstance().getCurrentProject().getOutputDirectory();
-
-            trainingConfig.setConfigFile(trainingConfigFile);
-            File weightsFile = new File(outputDir, (String) trainingObject.get("weights_file"));
-            trainingConfig.setWeightsFile(weightsFile);
+            neuralNetworkConfig.setConfigFile(trainingConfigFile);
+            Project project = new Project(trainingConfigFile.getParentFile());
+            File weightsFile = new File(project.getOutputDirectory(), (String) trainingObject.get("weights_file"));
+            neuralNetworkConfig.setWeightsFile(weightsFile);
             int inputNeuronsCount = (int) (long) trainingObject.get("input_neurons_count");
-            trainingConfig.setInputNeuronsCount(inputNeuronsCount);
+            neuralNetworkConfig.setInputNeuronsCount(inputNeuronsCount);
             int hiddenNeuronsCount = (int) (long) trainingObject.get("hidden_neurons_count");
-            trainingConfig.setHiddenNeuronsCount(hiddenNeuronsCount);
+            neuralNetworkConfig.setHiddenNeuronsCount(hiddenNeuronsCount);
             int outputNeuronsCount = (int) (long) trainingObject.get("output_neurons_count");
-            trainingConfig.setOutputNeuronsCount(outputNeuronsCount);
+            neuralNetworkConfig.setOutputNeuronsCount(outputNeuronsCount);
             double learningRate = (double) trainingObject.get("learning_rate");
-            trainingConfig.setLearningRate(learningRate);
+            neuralNetworkConfig.setLearningRate(learningRate);
             double minimumError = (double) trainingObject.get("minimum_error");
-            trainingConfig.setMinimumError(minimumError);
+            neuralNetworkConfig.setMinimumError(minimumError);
             int maxEpochs = (int) (long) trainingObject.get("max_epochs");
-            trainingConfig.setMaxEpochs(maxEpochs);
+            neuralNetworkConfig.setMaxEpochs(maxEpochs);
 
             Object convolveImageObj = trainingObject.get("convolve_image");
             boolean convolveImage = convolveImageObj != null && (boolean) convolveImageObj;
-            trainingConfig.setConvolveImage(convolveImage);
+            neuralNetworkConfig.setConvolveImage(convolveImage);
 
             Object negativeNormObj = trainingObject.get("negative_normalization");
             boolean negativeNormalization = negativeNormObj != null && (boolean) negativeNormObj;
-            trainingConfig.setNegativeNormalization(negativeNormalization);
+            neuralNetworkConfig.setNegativeNormalization(negativeNormalization);
 
             JSONArray inputsArray = (JSONArray) trainingObject.get("inputs");
-            String rootFolder = trainingConfig.getConfigFile().getParent();
+            String rootFolder = neuralNetworkConfig.getConfigFile().getParent();
 
             for (Object t : inputsArray) {
                 JSONObject inputObject = (JSONObject) t;
@@ -75,12 +76,12 @@ public class FileUtils {
                 trainingInputs.add(inputFile);
             }
 
-            trainingConfig.setInputs(trainingInputs);
+            neuralNetworkConfig.setInputs(trainingInputs);
         } catch (IOException | ParseException ioe) {
             ioe.printStackTrace();
         }
 
-        return trainingConfig;
+        return neuralNetworkConfig;
     }
 
     /**

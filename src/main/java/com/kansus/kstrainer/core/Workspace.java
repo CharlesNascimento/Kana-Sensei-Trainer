@@ -4,18 +4,24 @@ import java.io.File;
 import java.io.FileFilter;
 import java.util.HashMap;
 
+import static com.kansus.kstrainer.core.Project.CONFIG_FILE_NAME;
+
 public class Workspace {
+
+    private static final String COMPARISON_RESULT_DIRECTORY_NAME = "Comparison";
 
     private static Workspace instance;
 
     private File rootDirectory;
+    private File comparisonResultDirectory;
+    ;
 
     private HashMap<String, Project> projects = new HashMap<>();
 
     private Project currentProject;
 
     private void scanProjects() {
-        FileFilter filter = File::isDirectory;
+        FileFilter filter = pathname -> pathname.isDirectory() && new File(pathname, CONFIG_FILE_NAME).exists();
         File[] directories = rootDirectory.listFiles(filter);
 
         if (directories == null) return;
@@ -40,12 +46,21 @@ public class Workspace {
         return currentProject;
     }
 
+    public HashMap<String, Project> getProjects() {
+        return projects;
+    }
+
+    public File getComparisonResultDirectory() {
+        return comparisonResultDirectory;
+    }
+
     public void setCurrentProjectByName(String name) {
         currentProject = projects.get(name);
     }
 
     public void setRootDirectory(File rootDirectory) {
         this.rootDirectory = rootDirectory;
+        this.comparisonResultDirectory = new File(rootDirectory, COMPARISON_RESULT_DIRECTORY_NAME);
         scanProjects();
     }
 }
