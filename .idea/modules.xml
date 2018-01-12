@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kana-sensei-commons/Kana Sensei Trainer-kana-sensei-commons.iml" filepath="$PROJECT_DIR$/.idea/modules/kana-sensei-commons/Kana Sensei Trainer-kana-sensei-commons.iml" group="kana-sensei-commons" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/K-MLP/k-mlp.iml" filepath="$PROJECT_DIR$/.idea/modules/K-MLP/k-mlp.iml" group="k-mlp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/K-MLP/k-mlp.iml" filepath="$PROJECT_DIR$/.idea/modules/K-MLP/k-mlp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/K-MLP/k-mlp_main.iml" filepath="$PROJECT_DIR$/.idea/modules/K-MLP/k-mlp_main.iml" group="k-mlp" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/K-MLP/k-mlp_test.iml" filepath="$PROJECT_DIR$/.idea/modules/K-MLP/k-mlp_test.iml" group="k-mlp" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kana-sensei-commons.iml" filepath="$PROJECT_DIR$/.idea/modules/kana-sensei-commons.iml" />

@@ -16,6 +16,8 @@ class CommandFactory {
                 return new CompareNetworksCommand(args);
             case "generate-references":
                 return new GenerateReferencesCommand(args);
+            case "evaluate-similarities":
+                return new EvaluateSimilaritiesCommand(args);
             default:
                 System.err.println("<ERROR>   Invalid command.");
                 return null;

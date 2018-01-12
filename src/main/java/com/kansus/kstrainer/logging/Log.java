@@ -60,6 +60,21 @@ public class Log {
 	}
 
 	/**
+	 * Logs an empty new line.
+	 */
+	public static void newLine() {
+		System.out.println();
+
+		if (writer != null) {
+			try {
+				writer.newLine();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	/**
 	 * Logs a message to the console and to a file, if a writer is set.
 	 *
 	 * @param message The message to be logged.

@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 
 public class ThresholdFilter implements ImageFilter {
 
-    private int threshold = 210;
+    private int threshold;
 
     public ThresholdFilter(int threshold) {
         this.threshold = threshold;

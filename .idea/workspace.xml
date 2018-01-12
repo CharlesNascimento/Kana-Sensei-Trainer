@@ -2,84 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996fa0bf-6765-4e91-b7d2-8545b0fa67ab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP_main.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP_test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/kana-sensei-commons.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/kana-sensei-commons/Kana Sensei Trainer-kana-sensei-commons.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/kana-sensei-commons/kana-sensei-commons.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/kana-sensei-trainer.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/kana-sensei-trainer_main.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/kana-sensei-trainer_test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/activation/ActivationFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/activation/DefaultActivationFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/activation/HyperbolicTangentActivationFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/activation/LinearCombinationFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/activation/RectifiedLinearActivationFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/activation/SigmoidActivationFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/activation/SinusoidActivationFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/activation/StepActivationFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/core/ActivationFunctionInjector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Kana Sensei Commons/settings.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Kana Sensei Commons/src/main/java/com/kansus/commons/compressing/Compressor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Kana Sensei Commons/src/main/java/com/kansus/commons/compressing/ZLIBCompressor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Kana Sensei Commons/src/main/java/com/kansus/commons/encoding/Base64DataEncoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Kana Sensei Commons/src/main/java/com/kansus/commons/encoding/DataEncoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/commons/compressing/Compressor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/commons/compressing/ZLIBCompressor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/commons/encoding/Base64DataEncoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/commons/encoding/DataEncoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/data/json/DefaultJSONHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/data/json/JSONHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ImageFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ThresholdFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/Character.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/CharacterReferences.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/EvaluationResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/repository/CharacterRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/repository/Repository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/repository/StrokesRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/CompareNetworksCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/GenerateReferencesCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/strokes.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/Kana Sensei Trainer.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/Kana_Sensei_Trainer.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/Kana_Sensei_Trainer_main.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/Kana_Sensei_Trainer_test.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/core/Project.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/core/Project.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/core/Workspace.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/core/Workspace.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/StrokePattern.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/StrokePattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/CommandFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/CommandFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/FileUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/FileUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/PreNetworkUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/PreNetworkUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/characters.json" afterPath="$PROJECT_DIR$/src/main/resources/characters.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/HiddenLayer.java" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/layer/HiddenLayer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/HiddenNeuron.java" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/neuron/HiddenNeuron.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/InputLayer.java" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/layer/InputLayer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/InputNeuron.java" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/neuron/InputNeuron.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/Layer.java" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/layer/Layer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/MultilayerPerceptron.java" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/core/MultilayerPerceptron.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/NetworkTrainingListener.java" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/core/NetworkTrainingListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/Neuron.java" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/neuron/Neuron.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/OutputLayer.java" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/layer/OutputLayer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/OutputNeuron.java" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/neuron/OutputNeuron.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/Pattern.java" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/model/Pattern.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/Utils.java" afterPath="$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/Utils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/TrainingConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/NeuralNetworkConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Command.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/Command.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/EvaluateNetworkCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateNetworkCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/EvaluateSimpleCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateSimpleCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/TrainNetworkCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Log.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/logging/Log.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/EvaluationResultsTable.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Table.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateSimilaritiesCommand.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP.iml" afterPath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP_main.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP_test.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ThresholdFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ThresholdFilter.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/logging/Log.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/logging/Log.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/CommandFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/CommandFactory.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/CompareNetworksCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/CompareNetworksCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateNetworkCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateNetworkCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/GenerateReferencesCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/GenerateReferencesCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Utils.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/characters.json" afterPath="$PROJECT_DIR$/src/main/resources/characters.json" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/strokes.json" afterPath="$PROJECT_DIR$/src/main/resources/strokes.json" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -134,35 +76,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="kana-sensei-trainer" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="kana-sensei-trainer" type="f1a62948:ProjectNode" />
-                <item name="kana-sensei-trainer" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="kana-sensei-trainer" type="f1a62948:ProjectNode" />
-                <item name="kana-sensei-trainer" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="kana-sensei-trainer" type="f1a62948:ProjectNode" />
-                <item name=":kana-sensei-commons" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="kana-sensei-trainer" type="f1a62948:ProjectNode" />
-                <item name=":kana-sensei-commons" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="kana-sensei-trainer" type="f1a62948:ProjectNode" />
-                <item name=":kana-sensei-commons" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -172,34 +85,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataEncoder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/commons/encoding/DataEncoder.java">
+      <file leaf-file-name="EvaluateNetworkCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateNetworkCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="612">
+              <caret line="71" column="71" lean-forward="true" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="71" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Compressor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Kana Sensei Commons/src/main/java/com/kansus/commons/compressing/Compressor.java">
+      <file leaf-file-name="CompareNetworksCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/CompareNetworksCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="71" column="75" lean-forward="false" selection-start-line="71" selection-start-column="75" selection-end-line="71" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreNetworkUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/PreNetworkUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1173">
+              <caret line="75" column="9" lean-forward="false" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvaluationResult.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/EvaluationResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenerateReferencesCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/GenerateReferencesCommand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <caret line="60" column="65" lean-forward="false" selection-start-line="60" selection-start-column="65" selection-end-line="60" selection-end-column="65" />
+              <folding>
+                <element signature="e#4345#4346#0" expanded="true" />
+                <element signature="e#4380#4381#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strokes.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/strokes.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="138" column="8" lean-forward="false" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Utils.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="58" column="49" lean-forward="false" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="316">
+              <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="characters.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/characters.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="423" column="6" lean-forward="true" selection-start-line="423" selection-start-column="6" selection-end-line="423" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrainNetworkCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="148" column="83" lean-forward="true" selection-start-line="148" selection-start-column="83" selection-end-line="148" selection-end-column="83" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -207,68 +181,8 @@
       <file leaf-file-name="NeuralNetworkFacade.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="401" column="66" lean-forward="true" selection-start-line="401" selection-start-column="66" selection-end-line="401" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Kana Sensei Commons/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/K-MLP/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/K-MLP/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThresholdFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ThresholdFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+              <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -295,10 +209,12 @@
       <find>KEY_HIDDEN_LAYER</find>
       <find>Result:</find>
       <find>false</find>
-      <find>true</find>
       <find>PX-0</find>
       <find>rootProjec</find>
       <find>f</find>
+      <find>Id</find>
+      <find>true</find>
+      <find>FAIL</find>
     </findStrings>
     <replaceStrings>
       <replace>private static</replace>
@@ -314,15 +230,33 @@
     <option name="myGradleHomes">
       <map>
         <entry key="$PROJECT_DIR$" value="C:\Users\charl\.gradle\wrapper\dists\gradle-4.3.1-all\97nfwr7im082t7xwc6bkwfrg9\gradle-4.3.1" />
+        <entry key="$PROJECT_DIR$/K-MLP" value="C:\Users\charl\.gradle\wrapper\dists\gradle-3.5-rc-2-bin\7ktl4k9rdug30mawecgppf5ms\gradle-3.5-rc-2" />
       </map>
     </option>
     <option name="myGradleVersions">
       <map>
         <entry key="$PROJECT_DIR$" value="4.3.1" />
+        <entry key="$PROJECT_DIR$/K-MLP" value="3.5" />
       </map>
     </option>
     <option name="availableProjects">
       <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="k-mlp" />
+              <option name="path" value="$PROJECT_DIR$/K-MLP" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="k-mlp" />
+                <option name="path" value="$PROJECT_DIR$/K-MLP" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
         <entry>
           <key>
             <ExternalProjectPojo>
@@ -496,7 +430,7 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':k-mlp'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'k-mlp'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/K-MLP" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
@@ -506,7 +440,7 @@
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':k-mlp'." />
+                <option name="description" value="Displays the sub-projects of root project 'k-mlp'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/K-MLP" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
@@ -516,14 +450,19 @@
                 <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':k-mlp'. [incubating]" />
+                <option name="description" value="Displays the dependent components of components in root project 'k-mlp'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/K-MLP" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':k-mlp'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'k-mlp'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/K-MLP" />
                 <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/K-MLP" />
+                <option name="name" value="wrapper" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles test classes." />
@@ -541,7 +480,7 @@
                 <option name="name" value="jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':k-mlp'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'k-mlp'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/K-MLP" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
@@ -551,9 +490,14 @@
                 <option name="name" value="processResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':k-mlp'." />
+                <option name="description" value="Displays the tasks runnable from root project 'k-mlp'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/K-MLP" />
                 <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/K-MLP" />
+                <option name="name" value="init" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the unit tests." />
@@ -566,7 +510,7 @@
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':k-mlp'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'k-mlp'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/K-MLP" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -591,7 +535,7 @@
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':k-mlp'." />
+                <option name="description" value="Displays all dependencies declared in root project 'k-mlp'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/K-MLP" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
@@ -616,7 +560,7 @@
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':k-mlp'." />
+                <option name="description" value="Displays the properties of root project 'k-mlp'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/K-MLP" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
@@ -683,14 +627,15 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$USER_HOME$/.gradle/gradle.properties" value="0" />
         <entry key="$PROJECT_DIR$" value="9075605222227" />
-        <entry key="$PROJECT_DIR$/K-MLP" value="6046858113101" />
-        <entry key="$PROJECT_DIR$/K-MLP/build.gradle" value="2778513628" />
+        <entry key="$PROJECT_DIR$/K-MLP/build.gradle" value="2899480039" />
+        <entry key="$PROJECT_DIR$/K-MLP/gradle/wrapper/gradle-wrapper.properties" value="0" />
         <entry key="$PROJECT_DIR$/K-MLP/settings.gradle" value="69341468" />
         <entry key="$PROJECT_DIR$/Kana Sensei Commons/build.gradle" value="89861705" />
         <entry key="$PROJECT_DIR$/Kana Sensei Commons/settings.gradle" value="365757237" />
         <entry key="$PROJECT_DIR$/build.gradle" value="2867263188" />
-        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1491888232" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="0" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="3620796322" />
       </map>
     </option>
@@ -1180,33 +1125,123 @@
             </ExternalProjectBuildClasspathPojo>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/K-MLP">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$/K-MLP">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/K-MLP" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="k-mlp" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/ant-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/ant-launcher-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-base-services-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-base-services-groovy-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-cli-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-core-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-docs-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-installation-beacon-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-jvm-services-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-launcher-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-logging-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-messaging-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-model-core-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-model-groovy-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-native-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-open-api-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-process-services-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-resources-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-runtime-api-info-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-script-kotlin-0.8.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-tooling-api-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-ui-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-version-info-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/gradle-wrapper-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/groovy-all-2.4.10.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-announce-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-antlr-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-build-cache-http-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-build-comparison-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-build-init-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-code-quality-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-composite-builds-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-dependency-management-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-diagnostics-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-ear-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-ide-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-ide-native-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-ide-play-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-ivy-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-jacoco-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-javascript-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-jetty-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-language-groovy-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-language-java-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-language-jvm-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-language-native-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-language-scala-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-maven-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-osgi-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-platform-base-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-platform-jvm-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-platform-native-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-platform-play-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-plugin-development-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-plugin-use-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-plugins-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-publish-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-reporting-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-resources-http-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-resources-s3-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-resources-sftp-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-scala-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-signing-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-test-kit-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-testing-base-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-testing-jvm-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-testing-native-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-tooling-api-builders-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/gradle-workers-3.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.5-rc-2-bin/7ktl4k9rdug30mawecgppf5ms/gradle-3.5-rc-2/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/K-MLP/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/K-MLP/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/neuron/OutputNeuron.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/layer/OutputLayer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/neuron/Neuron.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/core/ActivationFunctionInjector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/activation/DefaultActivationFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Log.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/model/Pattern.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp/core/MultilayerPerceptron.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/TrainNetworkCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/Character.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/CompareNetworksCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/CharacterRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/StrokePattern.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/PreNetworkUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/EvaluateNetworkCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/CommandFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/CompressionUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Compressor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/ZLIBCompressor.java" />
@@ -1219,26 +1254,35 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/repository/CharacterRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/repository/StrokesRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/data/ZLIBCompressor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ThresholdFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ImageFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/CharactersReferencesGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/GenerateReferences.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/GenerateReferencesCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/data/encoding/DataEncoder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/data/encoding/Base64DataEncoder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/logging/Log.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/data/json/JSONHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/data/compressing/Compressor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/data/compressing/ZLIBCompressor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/CharacterReferences.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Utils.java" />
         <option value="$PROJECT_DIR$/Kana Sensei Commons/settings.gradle" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/K-MLP/settings.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/Kana Sensei Commons/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/CommandFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/EvaluationResultsTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/logging/Log.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateSimilaritiesCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Table.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/CompareNetworksCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ThresholdFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateNetworkCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/GenerateReferencesCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/strokes.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/characters.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java" />
       </list>
     </option>
@@ -1267,6 +1311,38 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Kana_Sensei_Trainer" type="cbb8eebc:String" user="Kana_Sensei_Trainer" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Kana Sensei Trainer" type="cbb8eebc:String" user="Kana Sensei Trainer" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Kana Sensei Trainer" type="cbb8eebc:String" user="Kana Sensei Trainer" />
+              <item name="Kana Sensei Trainer" type="cbb8eebc:String" user="Kana Sensei Trainer" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Kana Sensei Trainer" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Kana_Sensei_Trainer" type="eaaa3913:PackageViewModuleGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1326,7 +1402,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="kansus" type="462c0819:PsiDirectoryNode" />
               <item name="kstrainer" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Kana Sensei Trainer" type="b2602c69:ProjectViewProjectNode" />
@@ -1356,44 +1432,40 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="kansus" type="462c0819:PsiDirectoryNode" />
               <item name="kstrainer" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kana Sensei Trainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kana Sensei Trainer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kansus" type="462c0819:PsiDirectoryNode" />
+              <item name="kstrainer" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kana Sensei Trainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kana Sensei Trainer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kansus" type="462c0819:PsiDirectoryNode" />
+              <item name="kstrainer" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kana Sensei Trainer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kana Sensei Trainer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="show-excluded-files" value="false" />
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Kana_Sensei_Trainer" type="cbb8eebc:String" user="Kana_Sensei_Trainer" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Kana Sensei Trainer" type="cbb8eebc:String" user="Kana Sensei Trainer" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Kana Sensei Trainer" type="cbb8eebc:String" user="Kana Sensei Trainer" />
-              <item name="Kana Sensei Trainer" type="cbb8eebc:String" user="Kana Sensei Trainer" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Kana Sensei Trainer" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Kana_Sensei_Trainer" type="eaaa3913:PackageViewModuleGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
       </pane>
       <pane id="AndroidView" />
     </panes>
@@ -1403,6 +1475,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/mlp" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -1434,7 +1507,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Compare networks - Pixels">
+  <component name="RunManager" selected="Application.Evaluate network - Strokes">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
     <configuration name="Compare networks - Pixels" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1473,6 +1553,44 @@
       <module name="kana-sensei-trainer_main" />
       <envs />
     </configuration>
+    <configuration name="Evaluate network - Strokes" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.kansus.kstrainer.ui.command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.kansus.kstrainer.ui.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="evaluate-network strokes Default" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="kana-sensei-trainer_main" />
+      <envs />
+    </configuration>
+    <configuration name="Evaluate similarities" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.kansus.kstrainer.ui.command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.kansus.kstrainer.ui.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="evaluate-similarities App" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="kana-sensei-trainer_main" />
+      <envs />
+    </configuration>
     <configuration name="Evaluate strokes" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1501,7 +1619,7 @@
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.kansus.kstrainer.ui.Main" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="generate-references character E:/KST/K/Input/Default" />
+      <option name="PROGRAM_PARAMETERS" value="generate-references character E:/KST-24/PX-0/Input/Default" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1510,91 +1628,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="kana-sensei-trainer_main" />
       <envs />
-    </configuration>
-    <configuration name="Kana Sensei Trainer:Kana Sensei Commons [generatePomFileForMavenJavaPublication]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Kana Sensei Commons" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="generatePomFileForMavenJavaPublication" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="Kana Sensei Trainer:Kana Sensei Commons [publishMavenJavaPublicationToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Kana Sensei Commons" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publishMavenJavaPublicationToMavenLocal" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="Kana Sensei Trainer:Kana Sensei Commons [publishMavenJavaPublicationToMavenRepoRepository]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Kana Sensei Commons" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publishMavenJavaPublicationToMavenRepoRepository" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="Kana Sensei Trainer:Kana Sensei Commons [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Kana Sensei Commons" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publishToMavenLocal" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="Kana Sensei Trainer:Kana Sensei Commons [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Kana Sensei Commons" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publish" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
     </configuration>
     <configuration name="Train pixels" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -1615,12 +1648,24 @@
       <module name="kana-sensei-trainer_main" />
       <envs />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
+    <configuration name="Train strokes" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.kansus.kstrainer.ui.command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.kansus.kstrainer.ui.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="train strokes" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="kana-sensei-trainer_main" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -1635,6 +1680,96 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="Kana Sensei Trainer:Kana Sensei Commons [generatePomFileForMavenJavaPublication]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Kana Sensei Commons" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="generatePomFileForMavenJavaPublication" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration name="Kana Sensei Trainer:Kana Sensei Commons [publishMavenJavaPublicationToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Kana Sensei Commons" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishMavenJavaPublicationToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration name="Kana Sensei Trainer:Kana Sensei Commons [publishMavenJavaPublicationToMavenRepoRepository]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Kana Sensei Commons" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishMavenJavaPublicationToMavenRepoRepository" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration name="Kana Sensei Trainer:Kana Sensei Commons [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Kana Sensei Commons" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration name="Kana Sensei Trainer:Kana Sensei Commons [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Kana Sensei Commons" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publish" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -1708,17 +1843,20 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="10">
+    <list size="13">
       <item index="0" class="java.lang.String" itemvalue="Application.Evaluate strokes" />
       <item index="1" class="java.lang.String" itemvalue="Application.Evaluate network - Pixels" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Generate References - Character" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Compare networks - Pixels" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Train pixels" />
-      <item index="5" class="java.lang.String" itemvalue="Gradle.Kana Sensei Trainer:Kana Sensei Commons [publishMavenJavaPublicationToMavenLocal]" />
-      <item index="6" class="java.lang.String" itemvalue="Gradle.Kana Sensei Trainer:Kana Sensei Commons [generatePomFileForMavenJavaPublication]" />
-      <item index="7" class="java.lang.String" itemvalue="Gradle.Kana Sensei Trainer:Kana Sensei Commons [publish]" />
-      <item index="8" class="java.lang.String" itemvalue="Gradle.Kana Sensei Trainer:Kana Sensei Commons [publishToMavenLocal]" />
-      <item index="9" class="java.lang.String" itemvalue="Gradle.Kana Sensei Trainer:Kana Sensei Commons [publishMavenJavaPublicationToMavenRepoRepository]" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Evaluate network - Strokes" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Evaluate similarities" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Generate References - Character" />
+      <item index="5" class="java.lang.String" itemvalue="Application.Compare networks - Pixels" />
+      <item index="6" class="java.lang.String" itemvalue="Application.Train pixels" />
+      <item index="7" class="java.lang.String" itemvalue="Application.Train strokes" />
+      <item index="8" class="java.lang.String" itemvalue="Gradle.Kana Sensei Trainer:Kana Sensei Commons [publishMavenJavaPublicationToMavenLocal]" />
+      <item index="9" class="java.lang.String" itemvalue="Gradle.Kana Sensei Trainer:Kana Sensei Commons [generatePomFileForMavenJavaPublication]" />
+      <item index="10" class="java.lang.String" itemvalue="Gradle.Kana Sensei Trainer:Kana Sensei Commons [publish]" />
+      <item index="11" class="java.lang.String" itemvalue="Gradle.Kana Sensei Trainer:Kana Sensei Commons [publishToMavenLocal]" />
+      <item index="12" class="java.lang.String" itemvalue="Gradle.Kana Sensei Trainer:Kana Sensei Commons [publishMavenJavaPublicationToMavenRepoRepository]" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -1762,21 +1900,22 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1597826" sideWeight="0.4914712" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.48507464" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33369565" sideWeight="0.44616205" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27391306" sideWeight="0.3054371" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27391306" sideWeight="0.6945629" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33369565" sideWeight="0.55383795" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38152173" sideWeight="0.4936034" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27665246" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12260128" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19936034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12260128" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22826087" sideWeight="0.35127932" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2852598" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1795,53 +1934,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/activation/DefaultActivationFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="44" lean-forward="true" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/neuron/OutputNeuron.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/layer/HiddenLayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="524" column="30" lean-forward="false" selection-start-line="524" selection-start-column="30" selection-end-line="524" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67252">
-          <caret line="4029" column="38" lean-forward="false" selection-start-line="4029" selection-start-column="38" selection-end-line="4029" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/neuron/HiddenNeuron.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/ValidationUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1870,13 +1967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/Character.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1888,20 +1978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/strokes.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/characters.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
-          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1933,13 +2009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/PreNetworkUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="62" column="8" lean-forward="false" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/Command.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1947,24 +2016,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateNetworkCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateSimpleCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1979,20 +2034,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/CommandFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/CompareNetworksCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -2024,13 +2065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/logging/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/CharacterReferences.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -2059,13 +2093,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ImageFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kana Sensei Commons/local.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2080,53 +2107,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/GenerateReferencesCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/commons/encoding/DataEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kana Sensei Commons/src/main/java/com/kansus/commons/compressing/Compressor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kana Sensei Commons/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/K-MLP/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2134,15 +2118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ThresholdFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2150,24 +2125,199 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kana Sensei Commons/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/commons/encoding/DataEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="36" lean-forward="true" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kana Sensei Commons/src/main/java/com/kansus/commons/compressing/Compressor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/CommandFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/EvaluationResultsTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="58" column="49" lean-forward="false" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="49" />
+        <state relative-caret-position="1275">
+          <caret line="84" column="7" lean-forward="false" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/logging/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ImageFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/core/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="30" column="66" lean-forward="false" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/commons/compressing/ZLIBCompressor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ThresholdFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="96" lean-forward="false" selection-start-line="18" selection-start-column="96" selection-end-line="18" selection-end-column="96" />
+          <folding>
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateSimilaritiesCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="88" column="16" lean-forward="false" selection-start-line="88" selection-start-column="16" selection-end-line="89" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4862#4863#0" expanded="true" />
+            <element signature="e#4890#4891#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/CompareNetworksCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="71" column="75" lean-forward="false" selection-start-line="71" selection-start-column="75" selection-end-line="71" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/PreNetworkUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="75" column="9" lean-forward="false" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/EvaluationResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/GenerateReferencesCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="60" column="65" lean-forward="false" selection-start-line="60" selection-start-column="65" selection-end-line="60" selection-end-column="65" />
+          <folding>
+            <element signature="e#4345#4346#0" expanded="true" />
+            <element signature="e#4380#4381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/strokes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="138" column="8" lean-forward="false" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/characters.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="423" column="6" lean-forward="true" selection-start-line="423" selection-start-column="6" selection-end-line="423" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="148" column="83" lean-forward="true" selection-start-line="148" selection-start-column="83" selection-end-line="148" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateNetworkCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="71" column="71" lean-forward="true" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="401" column="66" lean-forward="true" selection-start-line="401" selection-start-column="66" selection-end-line="401" selection-end-column="66" />
+        <state relative-caret-position="323">
+          <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
           <folding />
         </state>
       </provider>

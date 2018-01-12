@@ -1,14 +1,15 @@
 package com.kansus.kstrainer.util;
 
+import com.kansus.kmlp.core.MultilayerPerceptron;
+import com.kansus.kstrainer.model.NeuralNetworkConfig;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-
-import javax.imageio.ImageIO;
-
-import com.kansus.kmlp.core.MultilayerPerceptron;
-import com.kansus.kstrainer.model.NeuralNetworkConfig;
 
 /**
  * Class with utility methods.
@@ -16,9 +17,6 @@ import com.kansus.kstrainer.model.NeuralNetworkConfig;
  * @author Charles Nascimento
  */
 public class Utils {
-
-    public static final String currentWorkspace = "E:\\KST";
-    public static final String currentNetwork = "E:\\KST";
 
     /**
      * Returns the index of the highest value in the given array.
@@ -168,7 +166,7 @@ public class Utils {
         }
     }
 
-    public static double cosineSimilarity(int[] vectorA, int[] vectorB) {
+    public static double cosineSimilarity(double[] vectorA, double[] vectorB) {
         double dotProduct = 0.0;
         double normA = 0.0;
         double normB = 0.0;
@@ -180,5 +178,78 @@ public class Utils {
         }
 
         return dotProduct / (Math.sqrt(normA) * Math.sqrt(normB));
+    }
+
+    public static BufferedImage resize(BufferedImage img, int newW, int newH) {
+        Image tmp = img.getScaledInstance(newW, newH, Image.SCALE_SMOOTH);
+        BufferedImage dimg = new BufferedImage(newW, newH, BufferedImage.TYPE_BYTE_BINARY);
+
+        Graphics2D g2d = dimg.createGraphics();
+        g2d.drawImage(tmp, 0, 0, null);
+        g2d.dispose();
+
+        return dimg;
+    }
+
+    /**
+     * scale image
+     *
+     * @param sbi       image to scale
+     * @param imageType type of image
+     * @param dWidth    width of destination image
+     * @param dHeight   height of destination image
+     * @param fWidth    x-factor for transformation / scaling
+     * @param fHeight   y-factor for transformation / scaling
+     * @return scaled image
+     */
+    public static BufferedImage scale(BufferedImage sbi, int imageType, int dWidth, int dHeight, double fWidth, double fHeight) {
+        BufferedImage dbi = null;
+        if (sbi != null) {
+            dbi = new BufferedImage(dWidth, dHeight, imageType);
+            Graphics2D g = dbi.createGraphics();
+
+            g.setPaint(Color.white);
+            g.fillRect(0, 0, dWidth, dHeight);
+
+            AffineTransform at = AffineTransform.getScaleInstance(fWidth, fHeight);
+
+            double x = dWidth / 2 - sbi.getWidth() * fWidth / 2;
+            double y = dHeight / 2 - sbi.getHeight() * fHeight / 2;
+
+            at.translate(x, y);
+            g.drawImage(sbi, at, null);
+        }
+        return dbi;
+    }
+
+    public static double[] concat(double[] array1, double[] array2) {
+        double[] c = new double[array1.length + array2.length];
+        System.arraycopy(array1, 0, c, 0, array1.length);
+        System.arraycopy(array2, 0, c, array1.length, array2.length);
+        return c;
+    }
+
+    public static double[] addRedundancyTo(double[] input, int level) {
+        double[] output = new double[input.length * (level + 1)];
+
+        for (int i = 0; i < input.length; i++) {
+            int start = i * (level + 1);
+            int end = start + level + 1;
+
+            for (int j = start; j < end; j++) {
+                output[j] = input[i];
+            }
+        }
+
+        return output;
+    }
+
+    public static void main(String[] args) {
+        double[] input = {1, 2, 3, 4, 5, 6, 7, 8};
+        input = addRedundancyTo(input, 3);
+
+        for (double d : input) {
+            System.out.println(d);
+        }
     }
 }
