@@ -24,6 +24,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 import static com.kansus.kstrainer.util.Utils.addRedundancyTo;
 import static com.kansus.kstrainer.util.Utils.concat;
@@ -88,7 +89,7 @@ public class TrainNetworkCommand implements Command, NetworkTrainingListener {
         File normalizationFolder = new File(rootFolder + "Intermediate\\Normalization");
         FileUtils.mkDir(normalizationFolder);
 
-        if (Workspace.getInstance().getCurrentProject().getRootDirectory().getName().equals("K") ||
+        if (Workspace.getInstance().getCurrentProject().getRootDirectory().getName().equals("PX-CN0") ||
                 Workspace.getInstance().getCurrentProject().getRootDirectory().getName().equals("PX-0")) {
             PreNetworkUtils.lowerValue = 0;
         } else {
@@ -98,17 +99,23 @@ public class TrainNetworkCommand implements Command, NetworkTrainingListener {
         for (int i = 0; i < inputs.size(); i++) {
             File currentPatternsFolder = inputs.get(i).getAbsoluteFile();
 
-            List<File> folderCharacters = Arrays.asList(currentPatternsFolder.listFiles());
+            File[] folderCharacters = currentPatternsFolder.listFiles(ValidationUtils.imagesFileFilter);
             File normalizationSubFolder = new File(normalizationFolder, currentPatternsFolder.getName());
             FileUtils.mkDir(normalizationSubFolder);
 
-            for (int j = 0; j < folderCharacters.size(); j++) {
-                File charFile = folderCharacters.get(j);
+            for (int j = 0; j < folderCharacters.length; j++) {
+                File charFile = folderCharacters[j];
                 BufferedImage charImage = ImageIO.read(charFile);
+                charImage = Utils.resize(charImage, IMAGE_DIMENSION, IMAGE_DIMENSION);
 
                 BufferedImage charImage1 = scale(charImage, BufferedImage.TYPE_BYTE_BINARY, 32, 32, 0.8, 1);
+                charImage1 = Utils.resize(charImage1, IMAGE_DIMENSION, IMAGE_DIMENSION);
+
                 BufferedImage charImage2 = scale(charImage, BufferedImage.TYPE_BYTE_BINARY, 32, 32, 1, 0.8);
+                charImage2 = Utils.resize(charImage2, IMAGE_DIMENSION, IMAGE_DIMENSION);
+
                 BufferedImage charImage3 = scale(charImage, BufferedImage.TYPE_BYTE_BINARY, 32, 32, 0.8, 0.8);
+                charImage3 = Utils.resize(charImage3, IMAGE_DIMENSION, IMAGE_DIMENSION);
 
                 double[] pixelsInput = PreNetworkUtils.normalizePixels(charImage, neuralNetworkConfig.isConvolveImage(),
                         neuralNetworkConfig.isNegativeNormalization());
@@ -120,13 +127,13 @@ public class TrainNetworkCommand implements Command, NetworkTrainingListener {
                         neuralNetworkConfig.isNegativeNormalization());
                 //int[] pixelsInputC = PreNetworkUtils.normalizePixels(charImage, true, neuralNetworkConfig.isNegativeNormalization());
                 Utils.savePixelsNormalizationToFile(pixelsInput, normalizationSubFolder,
-                        folderCharacters.get(j).getName());
+                        folderCharacters[j].getName());
                 Utils.savePixelsNormalizationToFile(pixelsInput1, normalizationSubFolder,
-                        folderCharacters.get(j).getName() + "1");
+                        folderCharacters[j].getName() + "1");
                 Utils.savePixelsNormalizationToFile(pixelsInput2, normalizationSubFolder,
-                        folderCharacters.get(j).getName() + "2");
+                        folderCharacters[j].getName() + "2");
                 Utils.savePixelsNormalizationToFile(pixelsInput3, normalizationSubFolder,
-                        folderCharacters.get(j).getName() + "3");
+                        folderCharacters[j].getName() + "3");
 
                 double[] expectedOutput = new double[92];
                 Arrays.fill(expectedOutput, -1);
@@ -140,7 +147,7 @@ public class TrainNetworkCommand implements Command, NetworkTrainingListener {
                 pixelsNeuralNetwork.addPattern("", pixelsInput2, expectedOutput);
                 pixelsNeuralNetwork.addPattern("", pixelsInput3, expectedOutput);
                 //pixelsNeuralNetwork.addPattern("", pixelsInputC, expectedOutput);
-                Log.writeln("<INFO>    Pattern " + folderCharacters.get(j).getName() + " added to the neural network");
+                Log.writeln("<INFO>    Pattern " + folderCharacters[j].getName() + " added to the neural network");
             }
         }
 
@@ -169,7 +176,7 @@ public class TrainNetworkCommand implements Command, NetworkTrainingListener {
         boolean isNegative = neuralNetworkConfig.isNegativeNormalization();
 
         if (Workspace.getInstance().getCurrentProject().getRootDirectory().getName().equals("PX-0") ||
-                Workspace.getInstance().getCurrentProject().getRootDirectory().getName().equals("K")) {
+                Workspace.getInstance().getCurrentProject().getRootDirectory().getName().equals("PX-CN0")) {
             PreNetworkUtils.lowerValue = 0;
         } else {
             PreNetworkUtils.lowerValue = -1;
@@ -178,14 +185,14 @@ public class TrainNetworkCommand implements Command, NetworkTrainingListener {
         for (int i = 0; i < inputs.size(); i++) {
             File currentPatternsFolder = neuralNetworkConfig.getInputs().get(i).getAbsoluteFile();
 
-            List<File> folderCharacters = Arrays.asList(currentPatternsFolder.listFiles());
+            File[] folderCharacters = currentPatternsFolder.listFiles(ValidationUtils.imagesFileFilter);
             File normalizationSubFolder = new File(normalizationFolder, currentPatternsFolder.getName());
             FileUtils.mkDir(normalizationSubFolder);
 
-            for (int j = 0; j < folderCharacters.size(); j++) {
-                BufferedImage charImage = ImageIO.read(folderCharacters.get(j));
+            for (int j = 0; j < Objects.requireNonNull(folderCharacters).length; j++) {
+                BufferedImage charImage = ImageIO.read(folderCharacters[j]);
                 charImage = Utils.resize(charImage, IMAGE_DIMENSION, IMAGE_DIMENSION);
-                String sampleName = FileUtils.getFilenameWithoutExtension(folderCharacters.get(j));
+                String sampleName = FileUtils.getFilenameWithoutExtension(folderCharacters[j]);
                 int charId = Integer.parseInt(sampleName.split("-")[0]);
                 Character character = characterRepository.getById(charId);
 

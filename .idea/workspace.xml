@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996fa0bf-6765-4e91-b7d2-8545b0fa67ab" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/EvaluationResultsTable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Table.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateSimilaritiesCommand.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP.iml" afterPath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP_main.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/K-MLP/K-MLP_test.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ThresholdFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ThresholdFilter.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/logging/Log.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/logging/Log.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/CommandFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/CommandFactory.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/CompareNetworksCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/CompareNetworksCommand.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateNetworkCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateNetworkCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/GenerateReferencesCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/GenerateReferencesCommand.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Utils.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/characters.json" afterPath="$PROJECT_DIR$/src/main/resources/characters.json" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/strokes.json" afterPath="$PROJECT_DIR$/src/main/resources/strokes.json" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/PreNetworkUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/PreNetworkUtils.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -42,8 +27,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Kana_Sensei_Trainer$Train_pixels.coverage" NAME="Train pixels Coverage Results" MODIFIED="1514150831012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.kansus.kstrainer.ui.*</FILTER>
+    <SUITE FILE_PATH="coverage/Kana_Sensei_Trainer$Train_pixels.coverage" NAME="Train pixels Coverage Results" MODIFIED="1519102734784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.kansus.kstrainer.ui.command.*</FILTER>
     </SUITE>
   </component>
   <component name="ExternalProjectsData">
@@ -88,9 +73,22 @@
       <file leaf-file-name="EvaluateNetworkCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateNetworkCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="71" column="71" lean-forward="true" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="71" />
+            <state relative-caret-position="1802">
+              <caret line="129" column="118" lean-forward="false" selection-start-line="129" selection-start-column="118" selection-end-line="129" selection-end-column="118" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThresholdFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ThresholdFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+              <folding>
+                <element signature="e#219#220#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,7 +96,7 @@
       <file leaf-file-name="CompareNetworksCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/CompareNetworksCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
+            <state relative-caret-position="585">
               <caret line="71" column="75" lean-forward="false" selection-start-line="71" selection-start-column="75" selection-end-line="71" selection-end-column="75" />
               <folding />
             </state>
@@ -108,18 +106,8 @@
       <file leaf-file-name="PreNetworkUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/PreNetworkUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="75" column="9" lean-forward="false" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EvaluationResult.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/EvaluationResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+            <state relative-caret-position="484">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -128,7 +116,7 @@
       <file leaf-file-name="GenerateReferencesCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/GenerateReferencesCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="585">
               <caret line="60" column="65" lean-forward="false" selection-start-line="60" selection-start-column="65" selection-end-line="60" selection-end-column="65" />
               <folding>
                 <element signature="e#4345#4346#0" expanded="true" />
@@ -138,21 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strokes.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/strokes.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="138" column="8" lean-forward="false" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+            <state relative-caret-position="456">
+              <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -161,8 +139,8 @@
       <file leaf-file-name="characters.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/characters.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="423" column="6" lean-forward="true" selection-start-line="423" selection-start-column="6" selection-end-line="423" selection-end-column="6" />
+            <state relative-caret-position="12274">
+              <caret line="722" column="19" lean-forward="false" selection-start-line="722" selection-start-column="19" selection-end-line="722" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -171,18 +149,28 @@
       <file leaf-file-name="TrainNetworkCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="148" column="83" lean-forward="true" selection-start-line="148" selection-start-column="83" selection-end-line="148" selection-end-column="83" />
+            <state relative-caret-position="2992">
+              <caret line="204" column="114" lean-forward="false" selection-start-line="204" selection-start-column="114" selection-end-line="204" selection-end-column="114" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NeuralNetworkFacade.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2907">
+              <caret line="180" column="5" lean-forward="false" selection-start-line="180" selection-start-column="5" selection-end-line="180" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NeuralNetworkFacade.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+            <state relative-caret-position="561">
+              <caret line="53" column="58" lean-forward="false" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -208,13 +196,26 @@
       <find>hidden_layer</find>
       <find>KEY_HIDDEN_LAYER</find>
       <find>Result:</find>
-      <find>false</find>
       <find>PX-0</find>
       <find>rootProjec</find>
       <find>f</find>
       <find>Id</find>
-      <find>true</find>
       <find>FAIL</find>
+      <find>true</find>
+      <find>false</find>
+      <find>chi</find>
+      <find>35-11</find>
+      <find>ku</find>
+      <find>54-</find>
+      <find>u</find>
+      <find>hu</find>
+      <find>49-2</find>
+      <find>5-</find>
+      <find>35-</find>
+      <find>49-</find>
+      <find>90-</find>
+      <find>ra</find>
+      <find>82-</find>
     </findStrings>
     <replaceStrings>
       <replace>private static</replace>
@@ -1240,7 +1241,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/CompareNetworksCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/CharacterRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/model/StrokePattern.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/PreNetworkUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/EvaluateNetworkCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/CompressionUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Compressor.java" />
@@ -1276,16 +1276,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateSimilaritiesCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Table.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/CompareNetworksCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ThresholdFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateNetworkCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/GenerateReferencesCommand.java" />
         <option value="$PROJECT_DIR$/src/main/resources/strokes.json" />
         <option value="$PROJECT_DIR$/src/main/resources/characters.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateNetworkCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/PreNetworkUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="294" />
@@ -1311,6 +1318,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Kana Sensei Trainer" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Kana_Sensei_Trainer" type="eaaa3913:PackageViewModuleGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -1326,18 +1345,6 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="Kana Sensei Trainer" type="cbb8eebc:String" user="Kana Sensei Trainer" />
               <item name="Kana Sensei Trainer" type="cbb8eebc:String" user="Kana Sensei Trainer" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Kana Sensei Trainer" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Kana_Sensei_Trainer" type="eaaa3913:PackageViewModuleGroupNode" />
             </path>
           </expand>
           <select />
@@ -1476,6 +1483,7 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui" />
+    <property name="SearchEverywhereHistoryKey" value="PreNe&#9;FILE&#9;file://E:/Projetos/TCC/Kana Sensei Trainer/src/main/java/com/kansus/kstrainer/util/PreNetworkUtils.java" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -1507,7 +1515,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Evaluate network - Strokes">
+  <component name="RunManager" selected="Application.Evaluate network - Pixels">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1619,7 +1627,7 @@
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.kansus.kstrainer.ui.Main" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="generate-references character E:/KST-24/PX-0/Input/Default" />
+      <option name="PROGRAM_PARAMETERS" value="generate-references character E:\KST-24X\PX-CN\Input\Default" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1902,19 +1910,19 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.48507464" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27391306" sideWeight="0.3054371" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27391306" sideWeight="0.6945629" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23043478" sideWeight="0.32942432" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23043478" sideWeight="0.6705757" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38152173" sideWeight="0.4936034" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19936034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22334754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12260128" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22826087" sideWeight="0.35127932" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22826087" sideWeight="0.5282516" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1924,8 +1932,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4835631" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23043478" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1934,25 +1942,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="29" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java</url>
+          <line>193</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/ValidationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-128">
-          <caret line="113" column="5" lean-forward="false" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/K-MLP/src/main/java/com/kansus/kmlp/model/Pattern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -2171,16 +2173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="84" column="7" lean-forward="false" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/logging/Log.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -2216,42 +2208,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ThresholdFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="96" lean-forward="false" selection-start-line="18" selection-start-column="96" selection-end-line="18" selection-end-column="96" />
-          <folding>
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateSimilaritiesCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
           <caret line="88" column="16" lean-forward="false" selection-start-line="88" selection-start-column="16" selection-end-line="89" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4862#4863#0" expanded="true" />
-            <element signature="e#4890#4891#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/CompareNetworksCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="71" column="75" lean-forward="false" selection-start-line="71" selection-start-column="75" selection-end-line="71" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/PreNetworkUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="75" column="9" lean-forward="false" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2259,13 +2219,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/strokes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2346">
+          <caret line="138" column="8" lean-forward="false" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/KST-24 - Copia/PX-CN0/network.json" />
+    <entry file="file://E:/KST-24 - Copia/PX-0/network.json" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateNetworkCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="129" column="118" lean-forward="false" selection-start-line="129" selection-start-column="118" selection-end-line="129" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="53" column="58" lean-forward="false" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2907">
+          <caret line="180" column="5" lean-forward="false" selection-start-line="180" selection-start-column="5" selection-end-line="180" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="204" column="114" lean-forward="false" selection-start-line="204" selection-start-column="114" selection-end-line="204" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/characters.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12274">
+          <caret line="722" column="19" lean-forward="false" selection-start-line="722" selection-start-column="19" selection-end-line="722" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/GenerateReferencesCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="585">
           <caret line="60" column="65" lean-forward="false" selection-start-line="60" selection-start-column="65" selection-end-line="60" selection-end-column="65" />
           <folding>
             <element signature="e#4345#4346#0" expanded="true" />
@@ -2274,50 +2282,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/strokes.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/util/PreNetworkUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="138" column="8" lean-forward="false" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+        <state relative-caret-position="484">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/characters.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/CompareNetworksCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="423" column="6" lean-forward="true" selection-start-line="423" selection-start-column="6" selection-end-line="423" selection-end-column="6" />
+        <state relative-caret-position="585">
+          <caret line="71" column="75" lean-forward="false" selection-start-line="71" selection-start-column="75" selection-end-line="71" selection-end-column="75" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/image/ThresholdFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/TrainNetworkCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="148" column="83" lean-forward="true" selection-start-line="148" selection-start-column="83" selection-end-line="148" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/ui/command/EvaluateNetworkCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="71" column="71" lean-forward="true" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kansus/kstrainer/NeuralNetworkFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        <state relative-caret-position="456">
+          <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
           <folding />
         </state>
       </provider>

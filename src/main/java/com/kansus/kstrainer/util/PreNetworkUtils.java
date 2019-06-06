@@ -68,7 +68,7 @@ public class PreNetworkUtils {
             Color c = new Color(inputPixels[i]);
             int mean = (c.getRed() + c.getGreen() + c.getBlue()) / 3;
 
-            if (mean < 210) {
+            if (mean < 200) {
                 normalizedPixels[i] = negative ? lowerValue : 1;
             } else {
                 normalizedPixels[i] = negative ? 1 : lowerValue;

@@ -27,7 +27,7 @@ import static com.kansus.kstrainer.util.Utils.resize;
 
 public class EvaluateNetworkCommand implements Command {
 
-    private static final int IMAGE_DIMENSION = 32;
+    private static final int IMAGE_DIMENSION = 24;
 
     private String[] args;
     private final CharacterRepository characterRepository;
@@ -127,7 +127,7 @@ public class EvaluateNetworkCommand implements Command {
         boolean isConvolve = neuralNetworkConfig.isConvolveImage();
         boolean isNegative = neuralNetworkConfig.isNegativeNormalization();
 
-        if (project.getRootDirectory().getName().equals("PX-0") || project.getRootDirectory().getName().equals("K")) {
+        if (project.getRootDirectory().getName().equals("PX-0") || project.getRootDirectory().getName().equals("PX-CN0")) {
             PreNetworkUtils.lowerValue = 0;
         } else {
             PreNetworkUtils.lowerValue = -1;

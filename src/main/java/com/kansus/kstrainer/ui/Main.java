@@ -33,8 +33,8 @@ public class Main {
      */
     public static void main(String[] args) {
         Workspace workspace = Workspace.getInstance();
-        workspace.setRootDirectory(new File("E:\\KST-32"));
-        workspace.setCurrentProjectByName("STR");
+        workspace.setRootDirectory(new File("E:\\KST\\KST-24"));
+        workspace.setCurrentProjectByName("PX-N");
 
         CommandFactory commandFactory = new CommandFactory();
         Command command = commandFactory.create(args);
